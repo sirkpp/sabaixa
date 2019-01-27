@@ -22,3 +22,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+//Route::get('/user', 'ProfileController@')
+Route::get('/user/{id}', 'ProfileController@index');
+Route::post('/user/editName', 'ProfileController@editName')->name('user.editName');
+Route::post('/user/editProfilePic', 'ProfileController@editProfilePic')->name('user.editProfilePic');
+Route::post('/user/editContact', 'ProfileController@editContact')->name('user.editContact');
+
+
+Route::get('/post/{id}', 'PostController@index');
+Route::get('/post', 'PostController@post');
+Route::post('/post/createPost', 'PostController@createPost');
