@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        MessageController::checkUserThread(123,345);
+        //MessageController::checkUserThread(123,345);
         return view('home');
     }
 }

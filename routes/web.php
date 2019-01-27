@@ -37,4 +37,8 @@ Route::post('/user/editContact', 'ProfileController@editContact')->name('user.ed
 
 Route::get('/post/{id}', 'PostController@index');
 Route::get('/post', 'PostController@post');
-Route::post('/post/createPost', 'PostController@createPost');
+Route::post('/post/createPost', 'PostController@createPost')->name('post.createPost');
+
+Route::get('/product/{id}', 'ProductController@index');
+Route::get('/product', 'ProductController@product');
+Route::post('/product/createProduct', 'ProductController@createProduct')->name('product.createProduct');
