@@ -66,9 +66,14 @@ class PostController extends Controller
             'post_detail' => ['required', 'string', 'min:6', 'confirmed'],
         ]);
     }
+    public function deletePost(Request $request)
+    {
+        $post = Post::find($request['id']);
+        $post->delete();
+    }
     public function post()
     {
-        return $this->showPost();
+        return $this->upost();
      //   return view('post')->with(array("posts"=>$this->showPost()));
     }
 

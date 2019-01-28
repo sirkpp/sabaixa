@@ -27,7 +27,7 @@ class ProductController extends Controller
      */
     public function index($id)
     {
-        $product = Product::findorfail($id);
+        $product = Product::findorFail($id);
         return $product;
         //return view('product');
     }
@@ -51,10 +51,10 @@ class ProductController extends Controller
         }
         return $data;
     }
-    public function createproduct(Request $request)
+    public function createProduct(Request $request)
     {
         if($this->validator(array("product_detail"=>$request['product_detail'], "product_name"=>$request['product_name']))){
-            return product::create([
+            return Product::create([
                 'product_name'=>$request['product_name'],
                 'product_type'=>$product['product_type'],
                 'product_detail'=>$product['product_detail'],
@@ -69,12 +69,37 @@ class ProductController extends Controller
             'product_detail' => ['required', 'string', 'min:6', 'confirmed'],
         ]);
     }
+    public function editProductDetail(Request $request)
+    {
+        if(validator::make(array("product_detail"=>$request['product_detail']),[
+            "product_detail" =>['required','string', 'max:191'],
+            ])){
+                $product = Product::find($request);
+                $product->product_detail = $request['product_detail'];
+                $product->save();
+        }
+    } 
+    public function editImgPath(Request $request)
+    {
+        if(validator::make(array("img_path"=>$request['img_path']),[
+            "img_path" =>['required','string', 'max:191'],
+            ])){
+                $product = Product::find($request);
+                $product->img_path = $request['img_path'];
+                $product->save();
+        }
+    } 
+
     public function product()
     {
-        return $this->showproduct();
+        return $this->showProduct();
      //   return view('product')->with(array("products"=>$this->showproduct()));
     }
-
+    public function deleteProduct(Request $request)
+    {
+        $product = Product::find($request['id']);
+        $product->delete();
+    }
     public function userProduct()
     {
         return Auth::user()->uproduct;                                 
