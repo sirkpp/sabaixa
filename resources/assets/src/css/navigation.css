@@ -1,70 +1,8 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  color: black; }
+.ham-menu-k {
+  display: none; }
 
-.nav-bar-k {
-  color: orangered;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3); }
-  .nav-bar-k ul {
-    display: flex;
-    height: 120px; }
-    .nav-bar-k ul li {
-      list-style-type: none;
-      margin-left: 20px; }
-      .nav-bar-k ul li a {
-        text-decoration: none; }
-  .nav-bar-k .site-name {
-    font-size: 46px;
-    left: 25px;
-    font-weight: 600;
-    left: 25px;
-    top: 0px;
-    position: absolute;
-    color: orangered; }
-  .nav-bar-k .site-name::after {
-    content: 'leading B2B service';
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 30px;
-    color: black; }
-
-.search-box {
-  height: 40px;
-  border: 2px solid orangered;
-  border-right: none;
-  padding: 5px; }
-
-.search-box:focus {
-  outline: none; }
-
-.button-k {
-  background: orangered;
-  color: white;
-  padding: 5px 20px;
-  cursor: pointer; }
-
-.button-k:hover {
-  background: red;
-  border: 2px solid red; }
-
-.search-k {
-  width: 300px; }
-
-.auth-part-k {
-  right: 25px;
-  position: absolute;
-  font-size: 18px; }
-  .auth-part-k .login-k {
-    margin-right: 20px;
-    border: 1px solid orangered;
-    color: orangered;
-    padding: 8px 10px; }
-  .auth-part-k .register-k {
-    border: 1px solid orangered;
-    color: white;
-    background: orangered;
-    padding: 8px 10px; }
+@media screen and (max-width: 990px) {
+  .ham-menu-k {
+    display: block; } }
 
 /*# sourceMappingURL=navigation.css.map */

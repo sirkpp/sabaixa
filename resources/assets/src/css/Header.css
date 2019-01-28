@@ -1,0 +1,41 @@
+.header-box-k {
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+  color: black; }
+  .header-box-k .search-box {
+    height: 40px;
+    border: 2px solid orangered;
+    padding: 5px; }
+  .header-box-k .search-box:focus {
+    outline: none; }
+  .header-box-k .button-k {
+    background: orangered;
+    color: white;
+    padding: 5px 20px;
+    cursor: pointer; }
+  .header-box-k .button-k:hover {
+    background: red;
+    border: 2px solid red; }
+  .header-box-k .search-k {
+    width: 300px; }
+  .header-box-k .auth-part-k {
+    right: 25px;
+    position: absolute;
+    font-size: 18px; }
+  .header-box-k .container-k, .header-box-k .pull-left-k {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .header-box-k .site-name-k {
+    color: orangered;
+    font-size: 46px;
+    font-weight: 700;
+    margin-right: 50px; }
+  .header-box-k .header-account-k {
+    margin-left: 50px; }
+
+@media screen and (max-width: 700px) {
+  .header-box-k .site-name-k, .header-box-k .header-account-k {
+    margin: 0px; } }
+
+/*# sourceMappingURL=Header.css.map */

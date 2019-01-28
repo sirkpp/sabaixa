@@ -1,16 +1,41 @@
 import React, {Component} from "react";
 import {NavLink} from "react-router-dom";
-
+import './../css/navigation.css';
+import SearchForm from './mini_parts/SearchForm';
 
 
 
 class MainPage extends Component{
 
     myfunction=()=>{
-        var foo=document.querySelector('#responsive-nav');
-        foo.classList.toggle("open");
-    }
+		var foo=document.querySelector('#responsive-nav');
+		var foo2=document.querySelector('#navigation');
+		foo.classList.toggle("open");
+		foo2.classList.toggle("shadow");
+	}
+	
+	myfunction2=() =>{
+		var foo=document.querySelector("#freak-list-1");
+		foo.classList.toggle("open");
+	}
 
+	myfunction3=()=>{
+		var foo=document.querySelector("#freak-list-2");
+		foo.classList.toggle("open");
+	}
+
+	random =()=>
+
+	{var barr=document.querySelector("#responsive-nav");
+	window.onClick=(event)=>{
+		if(event.target==barr){
+			barr.classList.remove("open");
+		}
+	}
+
+	}
+
+	
     render(){
 
         
@@ -24,7 +49,7 @@ class MainPage extends Component{
 		<div id="top-header">
 			<div className="container">
 				<div className="pull-left">
-					<span>Welcome to E-shop!</span>
+					<span>Welcome to Byapar</span>
 				</div>
 				<div className="pull-right">
 					<ul className="header-top-links">
@@ -55,10 +80,19 @@ class MainPage extends Component{
 		<div id="header">
 			<div className="container">
 				<div className="pull-left">
-					
+				<ul style={{display:"flex", alignItems:"center", justifyContent:"center" }}>
+                    <li >
+                        <NavLink to="/"><span className="site-name">Byapar</span></NavLink>
+                    </li>
+
+                    <li style={{display:"flex", alignItems:"center", justifyContent:"center" }}>
+                        <SearchForm getItem={this.getItem}/>
+                    </li>
+				</ul>
+					{/*
 					<div className="header-logo">
-						<NavLink to='#' className="logo" >
-							<img src={require("./img/logo.png")} alt="" />
+						<NavLink to='/' className="logo" >
+							<span style={{fontSize:"46px",color:"black",fontWeight:"700",padding:"0px 3px"}}>Byapar</span>
 						</NavLink>
 					</div>
 					
@@ -75,7 +109,7 @@ class MainPage extends Component{
 							<button className="search-btn"><i className="fa fa-search"></i></button>
 						</form>
 					</div>
-					
+					*/}
 				</div>
 				<div className="pull-right">
 					<ul className="header-btns">
@@ -87,7 +121,7 @@ class MainPage extends Component{
 								</div>
 								<strong className="text-uppercase">My Account <i className="fa fa-caret-down"></i></strong>
 							</div>
-							<NavLink to='/login'  className="text-uppercase">Login</NavLink> / <NavLink to='#'  className="text-uppercase">Join</NavLink>
+							<NavLink to='/login'  className="text-uppercase">Login</NavLink> / <NavLink to='/register'  className="text-uppercase">Join</NavLink>
 							<ul className="custom-menu">
 								<li><NavLink to='#' ><i className="fa fa-user-o"></i> My Account</NavLink></li>
 								<li><NavLink to='#' ><i className="fa fa-heart-o"></i> My Wishlist</NavLink></li>
@@ -98,50 +132,10 @@ class MainPage extends Component{
 							</ul>
 						</li>
 						
-						<li className="header-cart dropdown default-dropdown">
-							<NavLink to='#' className="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
-								<div className="header-btns-icon">
-									<i className="fa fa-shopping-cart"></i>
-									<span className="qty">3</span>
-								</div>
-								<strong className="text-uppercase">My Cart:</strong>
-								<br/>
-								<span>35.20$</span>
-							</NavLink>
-							<div className="custom-menu">
-								<div id="shopping-cart">
-									<div className="shopping-cart-list">
-										<div className="product product-widget">
-											<div className="product-thumb">
-												<img src={require("./img/thumb-product01.jpg")} alt=""/>
-											</div>
-											<div className="product-body">
-												<h3 className="product-price">$32.50 <span className="qty">x3</span></h3>
-												<h2 className="product-name"><NavLink to='#' >Product Name Goes Here</NavLink></h2>
-											</div>
-											<button className="cancel-btn"><i className="fa fa-trash"></i></button>
-										</div>
-										<div className="product product-widget">
-											<div className="product-thumb">
-												<img src={require("./img/thumb-product01.jpg")} alt=""/>
-											</div>
-											<div className="product-body">
-												<h3 className="product-price">$32.50 <span className="qty">x3</span></h3>
-												<h2 className="product-name"><NavLink to='#' >Product Name Goes Here</NavLink></h2>
-											</div>
-											<button className="cancel-btn"><i className="fa fa-trash"></i></button>
-										</div>
-									</div>
-									<div className="shopping-cart-btns">
-										<button className="main-btn">View Cart</button>
-										<button className="primary-btn">Checkout <i className="fa fa-arrow-circle-right"></i></button>
-									</div>
-								</div>
-							</div>
-						</li>
+						
 						
 						<li className="nav-toggle collapsed" onClick={this.myfunction}>
-							<button className="nav-toggle-btn main-btn icon-btn"><i className="fa fa-bars"></i></button>
+							<button className="nav-toggle-btn main-btn icon-btn" style={{right:"10px", top:"10px", position:"absolute"}} ><i className="fa fa-bars"></i></button>
 						</li>
 						
 					</ul>
@@ -155,11 +149,11 @@ class MainPage extends Component{
 	<div id="navigation">
 		
 		<div className="container">
-			<div id="responsive-nav">
+			<div style={{borderRight:"1px solid rgba(0,0,0,0.2)"}}id="responsive-nav">
 				
 				<div className="category-nav">
-					<span className="category-header">Categories <i className="fa fa-list"></i></span>
-					<ul className="category-list">
+					<span className="category-header">Categories <i onClick={this.myfunction2} className="fa fa-list"></i></span>
+					<ul id="freak-list-1" className="category-list">
 						<li className="dropdown side-dropdown">
 							<NavLink to='#' className="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Women’s Clothing <i className="fa fa-angle-right"></i></NavLink>
 							<div className="custom-menu">
@@ -352,8 +346,8 @@ class MainPage extends Component{
 				</div>
 				
 				<div className="menu-nav">
-					<span className="menu-header">Menu <i className="fa fa-bars"></i></span>
-					<ul className="menu-list">
+					<span className="menu-header">Menu <i onClick={this.myfunction3} className="fa fa-bars"></i></span>
+					<ul id="freak-list-2" className="menu-list">
 						<li><NavLink to='#' >Home</NavLink></li>
 						<li><NavLink to='#' >Shop</NavLink></li>
 						<li className="dropdown mega-dropdown"><NavLink to='#' className="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Women <i className="fa fa-caret-down"></i></NavLink>
@@ -511,6 +505,8 @@ class MainPage extends Component{
 		</div>
 		
 	</div>
+
+	
 	{/*
 	<div id="home">
 		

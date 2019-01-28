@@ -7,13 +7,13 @@ $default-color:rgb(153, 12, 12);
     justify-content: center;
     margin-left:15%;
     margin-right:15%;
-    margin-top:20px;
-    box-shadow:0px 4px 6px 0px rgba(0,0,0,0.3);
+    margin-top:30px;
     border-radius: 10px;
 
 
     .box-title{
         color:$default-color;
+
     }
 
     .login-container{
@@ -83,7 +83,6 @@ $default-color:rgb(153, 12, 12);
 @media screen and (max-width:620px){
     .login-k{
         margin:0px;
-        margin-top:10px;
 
         .form-box{
             width:90%;
