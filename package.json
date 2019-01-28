@@ -25,6 +25,7 @@
         "sass-loader": "^7.1.0"
     },
     "dependencies": {
+        "create-react-app": "^2.1.3",
         "react-router-dom": "^4.3.1"
     }
 }

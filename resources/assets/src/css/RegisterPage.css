@@ -1,0 +1,57 @@
+.login-k {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 20px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px; }
+  .login-k .box-title {
+    color: #990c0c; }
+  .login-k .login-container {
+    padding: 50px 30px;
+    display: flex;
+    flex-wrap: wrap; }
+  .login-k .form-box {
+    display: inline-block;
+    padding: 10px;
+    width: 50%; }
+    .login-k .form-box .form-field {
+      font-size: 18px;
+      color: #990c0c;
+      font-weight: 600; }
+    .login-k .form-box .select-field, .login-k .form-box .input-box {
+      width: 90%;
+      padding: 5px 10px;
+      border: 1px solid #990c0c;
+      border-radius: 3px;
+      font-size: 20px; }
+    .login-k .form-box .error-message {
+      color: red;
+      padding: 5px 0px;
+      font-size: 16px; }
+  .login-k .submit-button {
+    color: white;
+    background: #990c0c;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+    border-radius: 3px; }
+  .login-k .submit-button:hover {
+    background: red; }
+
+@media screen and (max-width: 800px) {
+  .login-k {
+    margin-left: 5%;
+    margin-right: 5%; } }
+@media screen and (max-width: 620px) {
+  .login-k {
+    margin: 0px;
+    margin-top: 10px; }
+    .login-k .form-box {
+      width: 90%; } }
+
+/*# sourceMappingURL=RegisterPage.css.map */
