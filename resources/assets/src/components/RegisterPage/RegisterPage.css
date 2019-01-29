@@ -1,0 +1,89 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.login-k {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 20px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+}
+
+.login-k .login-container {
+  padding: 50px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.login-k .form-box {
+  display: inline-block;
+  padding: 10px;
+  width: 50%;
+}
+.login-k .form-box .form-field {
+  font-size: 18px;
+  color: #0c7d99;
+  font-weight: 600;
+}
+.login-k .form-box .select-field,
+.login-k .form-box .input-box {
+  width: 90%;
+  padding: 10px 15px;
+  color: #000000;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.login-k .form-box .error-message {
+  color: rgb(138, 14, 14);
+  padding: 5px 0px;
+  font-size: 16px;
+}
+
+.login-k .submit-button {
+  margin-bottom: 10px;
+  color: white;
+  width: 94%;
+  background-color: #56baed;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  border-radius: 3px;
+}
+.login-k .submit-button:hover {
+  background-color: #39ace7;
+}
+
+@media screen and (max-width: 800px) {
+  .login-k {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .login-k {
+    margin: 0px;
+    margin-top: 10px;
+  }
+  .login-k .form-box {
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=RegisterPage.css.map */
