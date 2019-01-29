@@ -6,8 +6,11 @@ import Error from "./components/Error";
 import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 import MainPage from "./components/MainPage";
+import Footer from "./components/Footer";
+
 //import "./css/bootstrap.min.css";
 import "./css/slick.css";
+import "./css/slick-theme.css";
 import "./css/nouislider.min.css";
 import "./css/style.css";
 import LoginPage from "./components/LoginPage";
@@ -31,9 +34,9 @@ class App extends Component {
       <Header/>
       <Switch>
         <Route path="/register" component={RegisterPage}/>
-        <Route path="/" component={LoginPage} exact/>
-        <Route path="/login" component={LoginPage} exact/>
+        <Route path="/" component={Home} exact/>
         <Route path="/store" component={Navigation}/>
+        <Route path="/login" component={LoginPage} exact/>
         <Route path="/new" component={NewRoute} />
         <Route path="/page" component={MainPage} />
         <Route component={Error}/>

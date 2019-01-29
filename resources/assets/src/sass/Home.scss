@@ -1,0 +1,39 @@
+.whole-home {
+  .container-home {
+    .carousel-caption-k {
+      background: black;
+      opacity: 0.7;
+      color: orangered;
+    }
+
+    .carousel-control-k {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .right-arrow {
+        border: solid orangered;
+        border-width: 0 10px 10px 0;
+        display: inline-block;
+        padding: 10px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+
+      .left-arrow {
+        border: solid orangered;
+        border-width: 0 10px 10px 0;
+        display: inline-block;
+        padding: 10px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@media screen and(max-width:990px) {
+  .container-home {
+    margin: 0px !important;
+  }
+}

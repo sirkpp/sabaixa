@@ -18,7 +18,7 @@ export default class Header extends Component {
             <div className="header-box-k">
                 <header>
 
-                    <div id="top-header">
+                    <div id="top-header" className="top-header-k">
                         <div className="container">
                             <div className="pull-left">
                                 <span>Welcome to Byapar</span>
@@ -53,12 +53,12 @@ export default class Header extends Component {
                     <div id="header">
                         <div className="container container-k">
                             <div className="pull-left pull-left-k">
-                                <ul style={{ display: "flex", flexWrap:"wrap", alignItems: "center", justifyContent: "center" }}>
+                                <ul className="search-bar-k">
                                     <li >
                                         <NavLink to="/"><div className="site-name-k">BYAPAR</div></NavLink>
                                     </li>
 
-                                    <li style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                    <li className="actual-form" >
                                         <SearchForm getItem={this.getItem} />
                                     </li>
                                 </ul>
