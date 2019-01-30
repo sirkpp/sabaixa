@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import './../css/navigation.css';
 
+
 class Navigation extends Component {
 
-
-	
 	myfunction = () => {
 		var foo = document.querySelector('#responsive-nav');
 		var foo2 = document.querySelector('#navigation');
@@ -14,12 +13,12 @@ class Navigation extends Component {
 	}
 
 	myfunction2 = () => {
-		var foo = document.querySelector('#freak-list-1');
+		var foo = document.querySelector("#freak-list-1");
 		foo.classList.toggle("open");
 	}
 
 	myfunction3 = () => {
-		var foo = document.querySelector('#freak-list-2');
+		var foo = document.querySelector("#freak-list-2");
 		foo.classList.toggle("open");
 	}
 

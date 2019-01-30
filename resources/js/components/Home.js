@@ -2,6 +2,8 @@ import React from "react";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import Product from "./Product";
+import Company from "./Company";
 import "./../css/Home.css"
 
 const Home = () => {
@@ -58,6 +60,29 @@ const Home = () => {
                 </div>
 
             </div>
+            
+            <div className="products">
+                <h1 style={{width:"100%",padding:"30px 0px",textAlign:"center"}}>Products</h1>
+
+                <div className="ind-product">
+                <Product data={["banner01.jpg","google.com", "Leather Bags","100 pieces","Rs. 5000 per 100 pieces","Biratnagar"]}/>
+                </div>
+                <div className="ind-product">
+                <Product data={["banner01.jpg","google.com", "Leather Bags","100 pieces","Rs. 5000 per 100 pieces","Biratnagar"]}/>
+                </div>
+                <div className="ind-product">
+                <Product data={["banner01.jpg","google.com", "Leather Bags","100 pieces","Rs. 5000 per 100 pieces","Biratnagar"]}/>
+                </div>
+                <div className="ind-product">
+                <Product data={["banner01.jpg","google.com", "Leather Bags","100 pieces","Rs. 5000 per 100 pieces","Biratnagar"]}/>
+                </div>
+                <div className="ind-product">
+                <Product data={["banner01.jpg","google.com", "Leather Bags","100 pieces","Rs. 5000 per 100 pieces","Biratnagar"]}/>
+                </div>
+                
+                
+            </div>
+            <Company />
             <Footer />
 
         </div>

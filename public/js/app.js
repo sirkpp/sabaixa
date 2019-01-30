@@ -117,7 +117,26 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".whole-home .container-home .carousel-caption-k {\r\n  background: black;\r\n  opacity: 0.7;\r\n  color: orangered; }\r\n.whole-home .container-home .carousel-control-k {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center; }\r\n  .whole-home .container-home .carousel-control-k .right-arrow {\r\n    border: solid orangered;\r\n    border-width: 0 10px 10px 0;\r\n    display: inline-block;\r\n    padding: 10px;\r\n    transform: rotate(135deg);\r\n    -webkit-transform: rotate(135deg); }\r\n  .whole-home .container-home .carousel-control-k .left-arrow {\r\n    border: solid orangered;\r\n    border-width: 0 10px 10px 0;\r\n    display: inline-block;\r\n    padding: 10px;\r\n    transform: rotate(-45deg);\r\n    -webkit-transform: rotate(-45deg); }\r\n\r\n@media screen and (max-width: 990px) {\r\n  .container-home {\r\n    margin: 0px !important; } }\r\n", ""]);
+exports.push([module.i, ".whole-home .container-home .carousel-caption-k {\r\n  background: black;\r\n  opacity: 0.7;\r\n  color: orangered; }\r\n.whole-home .container-home .carousel-control-k {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center; }\r\n  .whole-home .container-home .carousel-control-k .right-arrow {\r\n    border: solid orangered;\r\n    border-width: 0 10px 10px 0;\r\n    display: inline-block;\r\n    padding: 10px;\r\n    transform: rotate(135deg);\r\n    -webkit-transform: rotate(135deg); }\r\n  .whole-home .container-home .carousel-control-k .left-arrow {\r\n    border: solid orangered;\r\n    border-width: 0 10px 10px 0;\r\n    display: inline-block;\r\n    padding: 10px;\r\n    transform: rotate(-45deg);\r\n    -webkit-transform: rotate(-45deg); }\r\n.whole-home .products {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  justify-content: center; }\r\n  .whole-home .products .ind-product {\r\n    width: 30%;\r\n    padding: 5px; }\r\n\r\n@media screen and (max-width: 990px) {\r\n  .container-home {\r\n    margin: 0px !important; } }\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/Product.css":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/css/Product.css ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".product-view {\r\n  width: 30%;\r\n  border: 1px solid black; }\r\n  .product-view .product-info {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background: black; }\r\n    .product-view .product-info .product-data {\r\n      list-style-type: none;\r\n      font-size: 16px;\r\n      color: white; }\r\n", ""]);
 
 // exports
 
@@ -193,7 +212,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "@charset 'UTF-8';\r\n/* Slider *//*\r\n.slick-loading .slick-list\r\n{\r\n    background: #fff url('./ajax-loader.gif') center center no-repeat;\r\n}\r\n\r\n/* Icons *//*\r\n@font-face\r\n{\r\n    font-family: 'slick';\r\n    font-weight: normal;\r\n    font-style: normal;\r\n\r\n    src: url('./fonts/slick.eot');\r\n    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');\r\n}\r\n/* Arrows */\r\n.slick-prev,\r\n.slick-next\r\n{\r\n    font-size: 0;\r\n    line-height: 0;\r\n\r\n    position: absolute;\r\n    top: 50%;\r\n\r\n    display: block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    padding: 0;\r\n    -webkit-transform: translate(0, -50%);\r\n    transform: translate(0, -50%);\r\n\r\n    cursor: pointer;\r\n\r\n    color: transparent;\r\n    border: none;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-prev:hover,\r\n.slick-prev:focus,\r\n.slick-next:hover,\r\n.slick-next:focus\r\n{\r\n    color: transparent;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-prev:hover:before,\r\n.slick-prev:focus:before,\r\n.slick-next:hover:before,\r\n.slick-next:focus:before\r\n{\r\n    opacity: 1;\r\n}\r\n.slick-prev.slick-disabled:before,\r\n.slick-next.slick-disabled:before\r\n{\r\n    opacity: .25;\r\n}\r\n\r\n.slick-prev:before,\r\n.slick-next:before\r\n{\r\n    font-family: 'slick';\r\n    font-size: 20px;\r\n    line-height: 1;\r\n\r\n    opacity: .75;\r\n    color: white;\r\n\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\n.slick-prev\r\n{\r\n    left: -25px;\r\n}\r\n[dir='rtl'] .slick-prev\r\n{\r\n    right: -25px;\r\n    left: auto;\r\n}\r\n.slick-prev:before\r\n{\r\n    content: '\\2190';\r\n}\r\n[dir='rtl'] .slick-prev:before\r\n{\r\n    content: '\\2192';\r\n}\r\n\r\n.slick-next\r\n{\r\n    right: -25px;\r\n}\r\n[dir='rtl'] .slick-next\r\n{\r\n    right: auto;\r\n    left: -25px;\r\n}\r\n.slick-next:before\r\n{\r\n    content: '\\2192';\r\n}\r\n[dir='rtl'] .slick-next:before\r\n{\r\n    content: '\\2190';\r\n}\r\n\r\n/* Dots */\r\n.slick-dotted.slick-slider\r\n{\r\n    margin-bottom: 30px;\r\n}\r\n\r\n.slick-dots\r\n{\r\n    position: absolute;\r\n    bottom: -25px;\r\n\r\n    display: block;\r\n\r\n    width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n\r\n    list-style: none;\r\n\r\n    text-align: center;\r\n}\r\n.slick-dots li\r\n{\r\n    position: relative;\r\n\r\n    display: inline-block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    margin: 0 5px;\r\n    padding: 0;\r\n\r\n    cursor: pointer;\r\n}\r\n.slick-dots li button\r\n{\r\n    font-size: 0;\r\n    line-height: 0;\r\n\r\n    display: block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    padding: 5px;\r\n\r\n    cursor: pointer;\r\n\r\n    color: transparent;\r\n    border: 0;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-dots li button:hover,\r\n.slick-dots li button:focus\r\n{\r\n    outline: none;\r\n}\r\n.slick-dots li button:hover:before,\r\n.slick-dots li button:focus:before\r\n{\r\n    opacity: 1;\r\n}\r\n.slick-dots li button:before\r\n{\r\n    font-family: 'slick';\r\n    font-size: 6px;\r\n    line-height: 20px;\r\n\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n\r\n    content: '\\2022';\r\n    text-align: center;\r\n\r\n    opacity: .25;\r\n    color: black;\r\n\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n}\r\n.slick-dots li.slick-active button:before\r\n{\r\n    opacity: .75;\r\n    color: black;\r\n}\r\n", ""]);
+exports.push([module.i, "@charset 'UTF-8';\n/* Slider *//*\n.slick-loading .slick-list\n{\n    background: #fff url('./ajax-loader.gif') center center no-repeat;\n}\n\n/* Icons *//*\n@font-face\n{\n    font-family: 'slick';\n    font-weight: normal;\n    font-style: normal;\n\n    src: url('./fonts/slick.eot');\n    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');\n}\n/* Arrows */\n.slick-prev,\n.slick-next\n{\n    font-size: 0;\n    line-height: 0;\n\n    position: absolute;\n    top: 50%;\n\n    display: block;\n\n    width: 20px;\n    height: 20px;\n    padding: 0;\n    -webkit-transform: translate(0, -50%);\n    transform: translate(0, -50%);\n\n    cursor: pointer;\n\n    color: transparent;\n    border: none;\n    outline: none;\n    background: transparent;\n}\n.slick-prev:hover,\n.slick-prev:focus,\n.slick-next:hover,\n.slick-next:focus\n{\n    color: transparent;\n    outline: none;\n    background: transparent;\n}\n.slick-prev:hover:before,\n.slick-prev:focus:before,\n.slick-next:hover:before,\n.slick-next:focus:before\n{\n    opacity: 1;\n}\n.slick-prev.slick-disabled:before,\n.slick-next.slick-disabled:before\n{\n    opacity: .25;\n}\n\n.slick-prev:before,\n.slick-next:before\n{\n    font-family: 'slick';\n    font-size: 20px;\n    line-height: 1;\n\n    opacity: .75;\n    color: white;\n\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\n.slick-prev\n{\n    left: -25px;\n}\n[dir='rtl'] .slick-prev\n{\n    right: -25px;\n    left: auto;\n}\n.slick-prev:before\n{\n    content: '\\2190';\n}\n[dir='rtl'] .slick-prev:before\n{\n    content: '\\2192';\n}\n\n.slick-next\n{\n    right: -25px;\n}\n[dir='rtl'] .slick-next\n{\n    right: auto;\n    left: -25px;\n}\n.slick-next:before\n{\n    content: '\\2192';\n}\n[dir='rtl'] .slick-next:before\n{\n    content: '\\2190';\n}\n\n/* Dots */\n.slick-dotted.slick-slider\n{\n    margin-bottom: 30px;\n}\n\n.slick-dots\n{\n    position: absolute;\n    bottom: -25px;\n\n    display: block;\n\n    width: 100%;\n    padding: 0;\n    margin: 0;\n\n    list-style: none;\n\n    text-align: center;\n}\n.slick-dots li\n{\n    position: relative;\n\n    display: inline-block;\n\n    width: 20px;\n    height: 20px;\n    margin: 0 5px;\n    padding: 0;\n\n    cursor: pointer;\n}\n.slick-dots li button\n{\n    font-size: 0;\n    line-height: 0;\n\n    display: block;\n\n    width: 20px;\n    height: 20px;\n    padding: 5px;\n\n    cursor: pointer;\n\n    color: transparent;\n    border: 0;\n    outline: none;\n    background: transparent;\n}\n.slick-dots li button:hover,\n.slick-dots li button:focus\n{\n    outline: none;\n}\n.slick-dots li button:hover:before,\n.slick-dots li button:focus:before\n{\n    opacity: 1;\n}\n.slick-dots li button:before\n{\n    font-family: 'slick';\n    font-size: 6px;\n    line-height: 20px;\n\n    position: absolute;\n    top: 0;\n    left: 0;\n\n    width: 20px;\n    height: 20px;\n\n    content: '\\2022';\n    text-align: center;\n\n    opacity: .25;\n    color: black;\n\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n.slick-dots li.slick-active button:before\n{\n    opacity: .75;\n    color: black;\n}\n", ""]);
 
 // exports
 
@@ -212,7 +231,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* Slider */\r\n.slick-slider\r\n{\r\n    position: relative;\r\n\r\n    display: block;\r\n    box-sizing: border-box;\r\n\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\r\n\r\n    -webkit-touch-callout: none;\r\n    -khtml-user-select: none;\r\n    touch-action: pan-y;\r\n    -webkit-tap-highlight-color: transparent;\r\n}\r\n\r\n.slick-list\r\n{\r\n    position: relative;\r\n\r\n    display: block;\r\n    overflow: hidden;\r\n\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n.slick-list:focus\r\n{\r\n    outline: none;\r\n}\r\n.slick-list.dragging\r\n{\r\n    cursor: pointer;\r\n    cursor: hand;\r\n}\r\n\r\n.slick-slider .slick-track,\r\n.slick-slider .slick-list\r\n{\r\n    -webkit-transform: translate3d(0, 0, 0);\r\n            transform: translate3d(0, 0, 0);\r\n}\r\n\r\n.slick-track\r\n{\r\n    position: relative;\r\n    top: 0;\r\n    left: 0;\r\n\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.slick-track:before,\r\n.slick-track:after\r\n{\r\n    display: table;\r\n\r\n    content: '';\r\n}\r\n.slick-track:after\r\n{\r\n    clear: both;\r\n}\r\n.slick-loading .slick-track\r\n{\r\n    visibility: hidden;\r\n}\r\n\r\n.slick-slide\r\n{\r\n    display: none;\r\n    float: left;\r\n\r\n    height: 100%;\r\n    min-height: 1px;\r\n}\r\n[dir='rtl'] .slick-slide\r\n{\r\n    float: right;\r\n}\r\n.slick-slide img\r\n{\r\n    display: block;\r\n}\r\n.slick-slide.slick-loading img\r\n{\r\n    display: none;\r\n}\r\n.slick-slide.dragging img\r\n{\r\n    pointer-events: none;\r\n}\r\n.slick-initialized .slick-slide\r\n{\r\n    display: block;\r\n}\r\n.slick-loading .slick-slide\r\n{\r\n    visibility: hidden;\r\n}\r\n.slick-vertical .slick-slide\r\n{\r\n    display: block;\r\n\r\n    height: auto;\r\n\r\n    border: 1px solid transparent;\r\n}\r\n.slick-arrow.slick-hidden {\r\n    display: none;\r\n}\r\n", ""]);
+exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
 
 // exports
 
@@ -28685,6 +28704,68 @@ __webpack_require__(/*! ./index */ "./resources/js/index.js"); //require("./jque
 
 /***/ }),
 
+/***/ "./resources/js/components/Company.js":
+/*!********************************************!*\
+  !*** ./resources/js/components/Company.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Company; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+var Company =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Company, _Component);
+
+  function Company() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, Company);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Company)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "render", function () {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Company1");
+    });
+
+    return _this;
+  }
+
+  return Company;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Error.js":
 /*!******************************************!*\
   !*** ./resources/js/components/Error.js ***!
@@ -29101,8 +29182,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./resources/js/components/Header.js");
 /* harmony import */ var _Navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navigation */ "./resources/js/components/Navigation.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.js");
-/* harmony import */ var _css_Home_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../css/Home.css */ "./resources/js/css/Home.css");
-/* harmony import */ var _css_Home_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_Home_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Product */ "./resources/js/components/Product.js");
+/* harmony import */ var _Company__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Company */ "./resources/js/components/Company.js");
+/* harmony import */ var _css_Home_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../css/Home.css */ "./resources/js/css/Home.css");
+/* harmony import */ var _css_Home_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_css_Home_css__WEBPACK_IMPORTED_MODULE_6__);
+
+
 
 
 
@@ -29182,7 +29267,35 @@ var Home = function Home() {
     "data-slide": "next"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "left-arrow"
-  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "products"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    style: {
+      width: "100%",
+      padding: "30px 0px",
+      textAlign: "center"
+    }
+  }, "Products"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "ind-product"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    data: ["banner01.jpg", "google.com", "Leather Bags", "100 pieces", "Rs. 5000 per 100 pieces", "Biratnagar"]
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "ind-product"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    data: ["banner01.jpg", "google.com", "Leather Bags", "100 pieces", "Rs. 5000 per 100 pieces", "Biratnagar"]
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "ind-product"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    data: ["banner01.jpg", "google.com", "Leather Bags", "100 pieces", "Rs. 5000 per 100 pieces", "Biratnagar"]
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "ind-product"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    data: ["banner01.jpg", "google.com", "Leather Bags", "100 pieces", "Rs. 5000 per 100 pieces", "Biratnagar"]
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "ind-product"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    data: ["banner01.jpg", "google.com", "Leather Bags", "100 pieces", "Rs. 5000 per 100 pieces", "Biratnagar"]
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Company__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -29267,7 +29380,7 @@ function (_Component) {
         onSubmit: this.handleSubmit
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         controlId: "email",
-        bssize: "large"
+        bsSize: "large"
       }, "Email", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         name: "email",
         placeholder: "email",
@@ -29277,7 +29390,7 @@ function (_Component) {
         }
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         controlId: "password",
-        bssize: "large"
+        bsSize: "large"
       }, "Password", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         name: "password",
         placeholder: "password",
@@ -30154,12 +30267,12 @@ function (_Component) {
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "myfunction2", function () {
-      var foo = document.querySelector('#freak-list-1');
+      var foo = document.querySelector("#freak-list-1");
       foo.classList.toggle("open");
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "myfunction3", function () {
-      var foo = document.querySelector('#freak-list-2');
+      var foo = document.querySelector("#freak-list-2");
       foo.classList.toggle("open");
     });
 
@@ -30754,6 +30867,97 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./resources/js/components/Product.js":
+/*!********************************************!*\
+  !*** ./resources/js/components/Product.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Product; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_Product_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../css/Product.css */ "./resources/js/css/Product.css");
+/* harmony import */ var _css_Product_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_Product_css__WEBPACK_IMPORTED_MODULE_1__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+var Product =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Product, _Component);
+
+  function Product() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    _classCallCheck(this, Product);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Product)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "render", function () {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", _defineProperty({
+        className: "product-box",
+        style: {
+          width: "100%",
+          border: "1px solid white"
+        }
+      }, "className", "product-view"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: _this.props.data[1],
+        className: "product-top"
+      }, console.log(_this.props.data), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        style: {
+          width: "100%"
+        },
+        src: __webpack_require__("./resources/js/components/img sync recursive ^\\.\\/.*$")("./" + _this.props.data[0])
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "product-info"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "product-data"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "product-name"
+      }, _this.props.data[2]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "min-quantity"
+      }, "min quantity : ", _this.props.data[3]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "price"
+      }, _this.props.data[4]), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+        className: "location"
+      }, "product location : ", _this.props.data[5])))));
+    });
+
+    return _this;
+  }
+
+  return Product;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/RegisterPage.js":
 /*!*************************************************!*\
   !*** ./resources/js/components/RegisterPage.js ***!
@@ -31042,6 +31246,71 @@ function (_Component) {
 
 /***/ }),
 
+/***/ "./resources/js/components/img sync recursive ^\\.\\/.*$":
+/*!***************************************************!*\
+  !*** ./resources/js/components/img sync ^\.\/.*$ ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./banner01.jpg": "./resources/js/components/img/banner01.jpg",
+	"./banner02.jpg": "./resources/js/components/img/banner02.jpg",
+	"./banner03.jpg": "./resources/js/components/img/banner03.jpg",
+	"./banner04.jpg": "./resources/js/components/img/banner04.jpg",
+	"./banner05.jpg": "./resources/js/components/img/banner05.jpg",
+	"./banner06.jpg": "./resources/js/components/img/banner06.jpg",
+	"./banner07.jpg": "./resources/js/components/img/banner07.jpg",
+	"./banner08.jpg": "./resources/js/components/img/banner08.jpg",
+	"./banner09.jpg": "./resources/js/components/img/banner09.jpg",
+	"./banner10.jpg": "./resources/js/components/img/banner10.jpg",
+	"./banner11.jpg": "./resources/js/components/img/banner11.jpg",
+	"./banner12.jpg": "./resources/js/components/img/banner12.jpg",
+	"./banner13.jpg": "./resources/js/components/img/banner13.jpg",
+	"./banner14.jpg": "./resources/js/components/img/banner14.jpg",
+	"./banner15.jpg": "./resources/js/components/img/banner15.jpg",
+	"./logo.png": "./resources/js/components/img/logo.png",
+	"./main-product01.jpg": "./resources/js/components/img/main-product01.jpg",
+	"./main-product02.jpg": "./resources/js/components/img/main-product02.jpg",
+	"./main-product03.jpg": "./resources/js/components/img/main-product03.jpg",
+	"./main-product04.jpg": "./resources/js/components/img/main-product04.jpg",
+	"./product01.jpg": "./resources/js/components/img/product01.jpg",
+	"./product02.jpg": "./resources/js/components/img/product02.jpg",
+	"./product03.jpg": "./resources/js/components/img/product03.jpg",
+	"./product04.jpg": "./resources/js/components/img/product04.jpg",
+	"./product05.jpg": "./resources/js/components/img/product05.jpg",
+	"./product06.jpg": "./resources/js/components/img/product06.jpg",
+	"./product07.jpg": "./resources/js/components/img/product07.jpg",
+	"./product08.jpg": "./resources/js/components/img/product08.jpg",
+	"./thumb-product01.jpg": "./resources/js/components/img/thumb-product01.jpg",
+	"./thumb-product02.jpg": "./resources/js/components/img/thumb-product02.jpg",
+	"./thumb-product03.jpg": "./resources/js/components/img/thumb-product03.jpg",
+	"./thumb-product04.jpg": "./resources/js/components/img/thumb-product04.jpg"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/js/components/img sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
 /***/ "./resources/js/components/img/banner01.jpg":
 /*!**************************************************!*\
   !*** ./resources/js/components/img/banner01.jpg ***!
@@ -31141,6 +31410,259 @@ module.exports = "/images/banner09.jpg?d80a9fa9d01a07396b005c18256c66b6";
 
 /***/ }),
 
+/***/ "./resources/js/components/img/banner10.jpg":
+/*!**************************************************!*\
+  !*** ./resources/js/components/img/banner10.jpg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/banner10.jpg?5a255e3cb251177088d5bd359122e64c";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/banner11.jpg":
+/*!**************************************************!*\
+  !*** ./resources/js/components/img/banner11.jpg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/banner11.jpg?30f105ccb5769bccc61b4d68d94fa2fd";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/banner12.jpg":
+/*!**************************************************!*\
+  !*** ./resources/js/components/img/banner12.jpg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/banner12.jpg?7a473ef6545fad2dba4e7786eacd25ac";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/banner13.jpg":
+/*!**************************************************!*\
+  !*** ./resources/js/components/img/banner13.jpg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/banner13.jpg?1368176b598c1c91f8eba9cadff754bb";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/banner14.jpg":
+/*!**************************************************!*\
+  !*** ./resources/js/components/img/banner14.jpg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/banner14.jpg?05ee2e0e123f808b102febd78b692415";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/banner15.jpg":
+/*!**************************************************!*\
+  !*** ./resources/js/components/img/banner15.jpg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/banner15.jpg?7faddb2178280779c00db8f5bb7bddcf";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/logo.png":
+/*!**********************************************!*\
+  !*** ./resources/js/components/img/logo.png ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo.png?f2bb0178554fdf0a08c47cfea1fb45ca";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/main-product01.jpg":
+/*!********************************************************!*\
+  !*** ./resources/js/components/img/main-product01.jpg ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/main-product01.jpg?a192236bdec9d942d547bc73cfd940ad";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/main-product02.jpg":
+/*!********************************************************!*\
+  !*** ./resources/js/components/img/main-product02.jpg ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/main-product02.jpg?4c1c30142cb7d1d8e9aacd8eacc020e8";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/main-product03.jpg":
+/*!********************************************************!*\
+  !*** ./resources/js/components/img/main-product03.jpg ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/main-product03.jpg?9f49070e35be6c281df25bf4ce7840d2";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/main-product04.jpg":
+/*!********************************************************!*\
+  !*** ./resources/js/components/img/main-product04.jpg ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/main-product04.jpg?91cb55ab88ac7b32af7c8ca06447c02e";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/product01.jpg":
+/*!***************************************************!*\
+  !*** ./resources/js/components/img/product01.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/product01.jpg?7c8379fe5c7f0cafb10dda14a75754e7";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/product02.jpg":
+/*!***************************************************!*\
+  !*** ./resources/js/components/img/product02.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/product02.jpg?ca75609af6e3456a615cf63aa0d7008e";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/product03.jpg":
+/*!***************************************************!*\
+  !*** ./resources/js/components/img/product03.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/product03.jpg?4c3afbc6f3c0be7a583b9652d86e4e33";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/product04.jpg":
+/*!***************************************************!*\
+  !*** ./resources/js/components/img/product04.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/product04.jpg?74c392ce46c1f80f67ccf5e0ffcff167";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/product05.jpg":
+/*!***************************************************!*\
+  !*** ./resources/js/components/img/product05.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/product05.jpg?2c73b7d535d5d002699e392c8558d8d1";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/product06.jpg":
+/*!***************************************************!*\
+  !*** ./resources/js/components/img/product06.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/product06.jpg?a3f9738753d5bcf68b851d78dfc042ee";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/product07.jpg":
+/*!***************************************************!*\
+  !*** ./resources/js/components/img/product07.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/product07.jpg?bdcd01ce000a8c9f746ff1465599e6e4";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/product08.jpg":
+/*!***************************************************!*\
+  !*** ./resources/js/components/img/product08.jpg ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/product08.jpg?17d7566a05dd2933af7ef446087a787e";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/thumb-product01.jpg":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/img/thumb-product01.jpg ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/thumb-product01.jpg?0a22c473a3b45862d44045cb6baebc28";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/thumb-product02.jpg":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/img/thumb-product02.jpg ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/thumb-product02.jpg?30ffcb7f157943c4e29d9b32853b979e";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/thumb-product03.jpg":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/img/thumb-product03.jpg ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/thumb-product03.jpg?d0cbf4daa177ae6c76d59d542a730816";
+
+/***/ }),
+
+/***/ "./resources/js/components/img/thumb-product04.jpg":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/img/thumb-product04.jpg ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/thumb-product04.jpg?baf2c2f3267388b239eb8b53c32a23f2";
+
+/***/ }),
+
 /***/ "./resources/js/components/mini_parts/SearchForm.js":
 /*!**********************************************************!*\
   !*** ./resources/js/components/mini_parts/SearchForm.js ***!
@@ -31228,6 +31750,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!./Home.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/Home.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/js/css/Product.css":
+/*!**************************************!*\
+  !*** ./resources/js/css/Product.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!./Product.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/Product.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -31718,8 +32270,8 @@ function unregister() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\xamp\htdocs\sabaixa\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! F:\xamp\htdocs\sabaixa\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\locusbnk\sabaixa\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\locusbnk\sabaixa\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
