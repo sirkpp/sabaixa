@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import history from "history";
-import ForgotPassword from "./ForgotPassword";
-import RegisterPage from "../RegisterPage/RegisterPage";
 import "./Login.css";
 
 const maintainmargin = {
@@ -17,7 +14,6 @@ export default class Login extends Component {
       password: "",
       passworderror: ""
     };
-    this.handleClick = this.handleClick.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -25,7 +21,7 @@ export default class Login extends Component {
   handleChange(e) {
     const { name, value } = e.target;
     this.setState({
-      name: value
+      [name]: value
     });
   }
 
@@ -72,13 +68,6 @@ export default class Login extends Component {
     }
   }
 
-  handleClick(e) {
-    const { name } = e.target;
-    if (name === "SignUp") {
-      this.setState({ notamember: !this.state.notamember });
-    }
-  }
-
   ComponentDidMount() {
     this.setState({ notamember: false });
   }
@@ -97,6 +86,7 @@ export default class Login extends Component {
               className="fadeIn second"
               name="username"
               placeholder="username"
+              value={this.state.username}
               onChange={this.handleChange}
             />
             <div className="error-message"> {this.state.usernameerror}</div>
@@ -106,6 +96,7 @@ export default class Login extends Component {
               className="fadeIn third"
               name="password"
               placeholder="password"
+              value={this.state.password}
               onChange={this.handleChange}
             />
             <div className="error-message"> {this.state.passworderror}</div>
@@ -121,3 +112,4 @@ export default class Login extends Component {
     );
   }
 }
+
