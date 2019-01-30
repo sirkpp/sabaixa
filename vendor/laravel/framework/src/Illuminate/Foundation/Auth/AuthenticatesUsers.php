@@ -49,7 +49,6 @@ trait AuthenticatesUsers
         // to login and redirect the user back to the login form. Of course, when this
         // user surpasses their maximum number of attempts they will get locked out.
         $this->incrementLoginAttempts($request);
-
         return $this->sendFailedLoginResponse($request);
     }
 
@@ -119,6 +118,7 @@ trait AuthenticatesUsers
     protected function authenticated(Request $request, $user)
     {
         //
+        
     }
 
     /**
