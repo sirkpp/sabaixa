@@ -29,26 +29,24 @@ class ProfileController extends Controller
      */
     public function index($id)
     {
-            $user = User::find($id);
+            $user = User::findorFail($id);
             return $user;
-            if($user != null){
+            /*if($user != null){
                 return view('user.userprofile')->with(array("user"=>$user));
-            }
+            }*/
     }
     public function editName(Request $request)
     {
-        if($this->validator(array("first_name"=>$request['first_name'], "last_name"=>$request['last_name']))){
+        if($this->validator(array("ame"=>$request['name'],))){
             $user = User::find($request);
-            $user->first_name = $request['first_name'];
-            $user->last_name = $request['last_name'];
+            $user->name = $request['name'];
             $user->save();
         }
     }
     protected function validator(array $data)
     {
         return validator::make($data,[
-            'first_name' => ['required', 'string', 'max:191'],
-            'last_name' => ['required', 'string', 'max:191'],
+            'name' => ['required', 'string', 'max:191'],
         ]);
     }
     public function editProfilePic(Request $request)

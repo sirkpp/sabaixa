@@ -50,6 +50,11 @@ Route::post('/product/createProduct', 'ProductController@createProduct')->name('
 Route::post('/product/editProductDetail', 'ProductController@editProductDetail')->name('product.editProductdetail');
 Route::post('/product/editImgPath', 'ProductController@editImgPath')->name('product.editImgPath');
 Route::post('/product/deleteProduct', 'ProductController@deleteProduct')->name('product.deleteProduct');
+Route::post('/product/editLocation', 'ProductController@editLocation')->name('product.editLocation');
+Route::post('/product/editSeller', 'ProductController@editSeller')->name('product.editSeller');
+Route::post('/product/editProductMinQuantity', 'ProductController@editProductMinQuantity')->name('product.editProductMinQuantity');
+Route::post('/product/editProductPricePerMinQuantity', 'ProductController@editProductPricePerMinQuantity')->name('product.editProductPricePerMinQuantity');
+
 
 Route::get('/review/{id}', 'ReviewController@index');
 Route::get('/review/showReview', 'ReviewController@showReview');
