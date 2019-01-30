@@ -16,7 +16,7 @@ class ProductTableSeeder extends Seeder
         $kpp['product_name']="Krishnaaa";
         $kpp['product_type']="Panthiii";
         $kpp['product_detail']="kpp@kpp.com";
-        $kpp['img_path']="kpp@kpp.com";
+        $kpp['img_path']="banner01.jpg";
         $kpp->Save();
     }
 }

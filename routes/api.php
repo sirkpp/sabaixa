@@ -13,12 +13,14 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+Route::group(['middleware' => ['web']], function () {
+    // your routes here
 
 Auth::routes();
 
@@ -60,3 +62,4 @@ Route::get('/review/{id}', 'ReviewController@index');
 Route::get('/review/showReview', 'ReviewController@showReview');
 Route::post('/review/createReview', 'ReviewController@createReview')->name('review.createreview');
 Route::post('/review/deleteReview', 'ReviewController@deleteReview')->name('user.deletereview');
+});

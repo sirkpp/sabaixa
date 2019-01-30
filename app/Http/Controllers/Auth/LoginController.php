@@ -41,11 +41,11 @@ class LoginController extends Controller
     protected function sendFailedLoginResponse(Request $request)
     {
 
-        return Response::json("not done");
+        return response("Not Found",404);
     }
     protected function authenticated(Request $request, $user)
     {
         //
-        return Response::json("done");
+        return response("Logged in",302);
     }
 }
