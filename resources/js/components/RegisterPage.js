@@ -128,9 +128,9 @@ export default class RegisterPage extends Component {
         body: {
           user_type: event.target.userType,
           
-          company_name: event.target.companyName,
+          name: event.target.companyName,
           
-          phone_number: event.target.phoneNumber,
+          contact_no: event.target.phoneNumber,
           
           email: event.target.email,
           

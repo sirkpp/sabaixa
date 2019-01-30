@@ -107,6 +107,7 @@ import "./../css/Home.css"
                     }
                     
                 </div>
+                <h1 style={{ width: "100%", padding: "30px 0px", textAlign: "center" }}>Companies</h1>
                 <Company />
                 <Footer />
 
