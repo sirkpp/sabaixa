@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class SingleMessage extends Model
+class groups extends Model
 {
     //
 }

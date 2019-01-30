@@ -31,7 +31,7 @@ export default class LoginPage extends Component {
     return (
       <div className="Login">
         <form onSubmit={this.handleSubmit}>
-          <form controlId="email" bsSize="large">
+          <form controlId="email" bssize="large">
             Email
             <input 
                 name="email"
@@ -42,7 +42,7 @@ export default class LoginPage extends Component {
                 
           </form>
           <br/>
-          <form controlId="password" bsSize="large">
+          <form controlId="password" bssize="large">
           Password
           <input 
           name="password"
