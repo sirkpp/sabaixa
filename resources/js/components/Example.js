@@ -1,26 +1,18 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
-export default class Example extends Component {
-    render() {
+    import React, { Component } from 'react'
+    import ReactDOM from 'react-dom'
+    import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
+    class Example extends Component {
+      render () {
         return (
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-md-8">
-                        <div className="card">
-                            <div className="card-header">Example Component</div>
-
-                            <div className="card-body">
-                                I'm an example component!
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <BrowserRouter>
+            <div>
+              Helllo
             </div>
-        );
+          </BrowserRouter>
+        )
+      }
     }
-}
 
-if (document.getElementById('example')) {
-    ReactDOM.render(<Example />, document.getElementById('example'));
-}
+    ReactDOM.render(<Example />, document.getElementById('Example'))

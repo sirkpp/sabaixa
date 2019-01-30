@@ -60,7 +60,7 @@ class React extends Preset
 
         copy(
             __DIR__.'/react-stubs/Example.js',
-            resource_path('js/components/Example.js')
+            resource_path('js/components/index.js')
         );
     }
 
