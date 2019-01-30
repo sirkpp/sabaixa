@@ -117,7 +117,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".whole-home .container-home .carousel-caption-k {\r\n  background: black;\r\n  opacity: 0.7;\r\n  color: orangered; }\r\n.whole-home .container-home .carousel-control-k {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center; }\r\n  .whole-home .container-home .carousel-control-k .right-arrow {\r\n    border: solid orangered;\r\n    border-width: 0 10px 10px 0;\r\n    display: inline-block;\r\n    padding: 10px;\r\n    transform: rotate(135deg);\r\n    -webkit-transform: rotate(135deg); }\r\n  .whole-home .container-home .carousel-control-k .left-arrow {\r\n    border: solid orangered;\r\n    border-width: 0 10px 10px 0;\r\n    display: inline-block;\r\n    padding: 10px;\r\n    transform: rotate(-45deg);\r\n    -webkit-transform: rotate(-45deg); }\r\n.whole-home .products {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  justify-content: center; }\r\n  .whole-home .products .ind-product {\r\n    width: 30%;\r\n    padding: 5px; }\r\n\r\n@media screen and (max-width: 990px) {\r\n  .container-home {\r\n    margin: 0px !important; } }\r\n", ""]);
+exports.push([module.i, ".whole-home .container-home .carousel-caption-k {\r\n  background: black;\r\n  opacity: 0.7;\r\n  color: orangered; }\r\n.whole-home .container-home .carousel-control-k {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center; }\r\n  .whole-home .container-home .carousel-control-k .right-arrow {\r\n    border: solid orangered;\r\n    border-width: 0 10px 10px 0;\r\n    display: inline-block;\r\n    padding: 10px;\r\n    transform: rotate(135deg);\r\n    -webkit-transform: rotate(135deg); }\r\n  .whole-home .container-home .carousel-control-k .left-arrow {\r\n    border: solid orangered;\r\n    border-width: 0 10px 10px 0;\r\n    display: inline-block;\r\n    padding: 10px;\r\n    transform: rotate(-45deg);\r\n    -webkit-transform: rotate(-45deg); }\r\n.whole-home .products {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  justify-content: center; }\r\n  .whole-home .products .ind-product {\r\n    width: 20%;\r\n    padding: 5px; }\r\n\r\n@media screen and (max-width: 990px) {\r\n  .whole-home .container-home {\r\n    margin: 0px !important; }\r\n  .whole-home .products .ind-product {\r\n    width: 30%; } }\r\n@media screen and (max-width: 700px) {\r\n  .whole-home .products .ind-product {\r\n    width: 40%; } }\r\n", ""]);
 
 // exports
 
@@ -136,7 +136,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".product-view {\r\n  width: 30%;\r\n  border: 1px solid black; }\r\n  .product-view .product-info {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background: black; }\r\n    .product-view .product-info .product-data {\r\n      list-style-type: none;\r\n      font-size: 16px;\r\n      color: white; }\r\n", ""]);
+exports.push([module.i, ".product-view {\r\n  width: 30%;\r\n  border: 1px solid black; }\r\n  .product-view .product-info {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background: black;\r\n    border: 1px solid orangered; }\r\n    .product-view .product-info .product-data {\r\n      list-style-type: none;\r\n      font-size: 14px;\r\n      color: orangered;\r\n      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }\r\n      .product-view .product-info .product-data .product-name {\r\n        font-size: 14px;\r\n        text-align: center;\r\n        font-weight: 600; }\r\n", ""]);
 
 // exports
 
@@ -29186,6 +29186,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Company__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Company */ "./resources/js/components/Company.js");
 /* harmony import */ var _css_Home_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../css/Home.css */ "./resources/js/css/Home.css");
 /* harmony import */ var _css_Home_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_css_Home_css__WEBPACK_IMPORTED_MODULE_6__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -29194,109 +29213,146 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Home = function Home() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "whole-home"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: {
-      marginLeft: "calc(270px + 5%)"
-    },
-    className: "container-home"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "home-wrap"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    id: "myCarousel",
-    className: "carousel slide",
-    "data-ride": "carousel"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
-    className: "carousel-indicators"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    "data-target": "#myCarousel",
-    "data-slide-to": "0",
-    className: "active"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    "data-target": "#myCarousel",
-    "data-slide-to": "1"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    "data-target": "#myCarousel",
-    "data-slide-to": "2"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "carousel-inner"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "item active"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ./img/banner01.jpg */ "./resources/js/components/img/banner01.jpg"),
-    alt: "Chania"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "carousel-caption carousel-caption-k"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    style: {
-      color: "white"
+
+var Home =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Home, _Component);
+
+  function Home() {
+    var _this;
+
+    _classCallCheck(this, Home);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this));
+
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "render", function () {
+      var _this$state = _this.state,
+          isLoaded = _this$state.isLoaded,
+          product = _this$state.product;
+
+      if (!isLoaded) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "loading......");
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "whole-home"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navigation__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          style: {
+            marginLeft: "calc(270px + 5%)"
+          },
+          className: "container-home"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "home-wrap"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          id: "myCarousel",
+          className: "carousel slide",
+          "data-ride": "carousel"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", {
+          className: "carousel-indicators"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          "data-target": "#myCarousel",
+          "data-slide-to": "0",
+          className: "active"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          "data-target": "#myCarousel",
+          "data-slide-to": "1"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+          "data-target": "#myCarousel",
+          "data-slide-to": "2"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "carousel-inner"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "item active"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: __webpack_require__(/*! ./img/banner01.jpg */ "./resources/js/components/img/banner01.jpg"),
+          alt: "Chania"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "carousel-caption carousel-caption-k"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+          style: {
+            color: "white"
+          }
+        }, "Los Angeles"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "LA is always so much fun!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "item "
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: __webpack_require__(/*! ./img/banner02.jpg */ "./resources/js/components/img/banner02.jpg"),
+          alt: "Chicago"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "carousel-caption carousel-caption-k"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+          style: {
+            color: "white"
+          }
+        }, "Chicago"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Thank you, Chicago!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "item "
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          src: __webpack_require__(/*! ./img/banner03.jpg */ "./resources/js/components/img/banner03.jpg"),
+          alt: "New York"
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "carousel-caption carousel-caption-k"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+          style: {
+            color: "white"
+          }
+        }, "New York"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We love the Big Apple!")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          className: "left carousel-control carousel-control-k",
+          href: "#myCarousel",
+          "data-slide": "prev"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "right-arrow"
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+          className: "right carousel-control carousel-control-k",
+          href: "#myCarousel",
+          "data-slide": "next"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "left-arrow"
+        }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "products"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+          style: {
+            width: "100%",
+            padding: "30px 0px",
+            textAlign: "center"
+          }
+        }, "Products"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "products"
+        }, product.map(function (item) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+            className: "ind-product",
+            key: item.id
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            data: [item.img_path, "/register", item.product_name, item.product_type, item.product_detail, "kathmandu"]
+          }));
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Company__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+      }
+    });
+
+    _this.state = {
+      product: [],
+      isLoaded: false
+    };
+    return _this;
+  }
+
+  _createClass(Home, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch('/api/product').then(function (response) {
+        return response.json();
+      }).then(function (json) {
+        //Fetched product is stored in the state
+        _this2.setState({
+          isLoaded: true,
+          product: json
+        });
+      });
     }
-  }, "Los Angeles"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "LA is always so much fun!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "item "
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ./img/banner02.jpg */ "./resources/js/components/img/banner02.jpg"),
-    alt: "Chicago"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "carousel-caption carousel-caption-k"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    style: {
-      color: "white"
-    }
-  }, "Chicago"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Thank you, Chicago!"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "item "
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: __webpack_require__(/*! ./img/banner03.jpg */ "./resources/js/components/img/banner03.jpg"),
-    alt: "New York"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "carousel-caption carousel-caption-k"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    style: {
-      color: "white"
-    }
-  }, "New York"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We love the Big Apple!")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "left carousel-control carousel-control-k",
-    href: "#myCarousel",
-    "data-slide": "prev"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "right-arrow"
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "right carousel-control carousel-control-k",
-    href: "#myCarousel",
-    "data-slide": "next"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "left-arrow"
-  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "products"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    style: {
-      width: "100%",
-      padding: "30px 0px",
-      textAlign: "center"
-    }
-  }, "Products"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "ind-product"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    data: ["banner01.jpg", "google.com", "Leather Bags", "100 pieces", "Rs. 5000 per 100 pieces", "Biratnagar"]
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "ind-product"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    data: ["banner01.jpg", "google.com", "Leather Bags", "100 pieces", "Rs. 5000 per 100 pieces", "Biratnagar"]
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "ind-product"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    data: ["banner01.jpg", "google.com", "Leather Bags", "100 pieces", "Rs. 5000 per 100 pieces", "Biratnagar"]
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "ind-product"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    data: ["banner01.jpg", "google.com", "Leather Bags", "100 pieces", "Rs. 5000 per 100 pieces", "Biratnagar"]
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "ind-product"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    data: ["banner01.jpg", "google.com", "Leather Bags", "100 pieces", "Rs. 5000 per 100 pieces", "Biratnagar"]
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Company__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
-};
+  }]);
+
+  return Home;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
@@ -31089,7 +31145,19 @@ function (_Component) {
       var err = _this.validateForm();
 
       if (!err) {
-        console.log(_this.state);
+        fetch('/register', {
+          method: 'post',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: {
+            user_type: event.target.userType,
+            company_name: event.target.companyName,
+            phone_number: event.target.phoneNumber,
+            email: event.target.email,
+            password: event.target.password
+          }
+        });
 
         _this.setState({
           userType: "",

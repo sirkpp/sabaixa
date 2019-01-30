@@ -26,11 +26,16 @@
   align-items: center;
   justify-content: center; }
   .whole-home .products .ind-product {
-    width: 30%;
+    width: 20%;
     padding: 5px; }
 
 @media screen and (max-width: 990px) {
-  .container-home {
-    margin: 0px !important; } }
+  .whole-home .container-home {
+    margin: 0px !important; }
+  .whole-home .products .ind-product {
+    width: 30%; } }
+@media screen and (max-width: 700px) {
+  .whole-home .products .ind-product {
+    width: 40%; } }
 
 /*# sourceMappingURL=Home.css.map */

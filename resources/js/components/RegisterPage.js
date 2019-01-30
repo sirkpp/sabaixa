@@ -118,7 +118,28 @@ export default class RegisterPage extends Component {
     console.log(event.target)
     const err = this.validateForm();
     if (!err) {
-      console.log(this.state);
+
+
+
+
+      fetch('/register', {
+        method: 'post',
+        headers: {'Content-Type':'application/json'},
+        body: {
+          user_type: event.target.userType,
+          
+          company_name: event.target.companyName,
+          
+          phone_number: event.target.phoneNumber,
+          
+          email: event.target.email,
+          
+          password: event.target.password,
+        }
+       });
+
+
+
       this.setState({
         userType: "",
         userTypeError: "",

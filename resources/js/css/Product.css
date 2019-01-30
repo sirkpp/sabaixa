@@ -6,10 +6,16 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background: black; }
+    background: black;
+    border: 1px solid orangered; }
     .product-view .product-info .product-data {
       list-style-type: none;
-      font-size: 16px;
-      color: white; }
+      font-size: 14px;
+      color: orangered;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+      .product-view .product-info .product-data .product-name {
+        font-size: 14px;
+        text-align: center;
+        font-weight: 600; }
 
 /*# sourceMappingURL=Product.css.map */

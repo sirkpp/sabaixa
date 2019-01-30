@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Auth;
+//use Auth;
 use App\Product;
 use App\User;
 use Illuminate\Http\Request;
@@ -14,11 +14,12 @@ class ProductController extends Controller
      * Create a new controller instance.
      *
      * @return void
+     * public function __construct()
+     * {
+      *  $this->middleware('auth');
+    * }
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    
 
     /**
      * Show the application dashboard.
