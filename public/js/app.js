@@ -30026,15 +30026,9 @@ function (_Component) {
       }, "My Account"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "list-links"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        to: "#"
+        to: "/profile"
       }, "My Account")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        to: "#"
-      }, "My Wishlist")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        to: "#"
-      }, "Compare")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        to: "#"
-      }, "Checkout")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
-        to: "#"
+        to: "/login"
       }, "Login"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "clearfix visible-sm visible-xs"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -30072,7 +30066,7 @@ function (_Component) {
         className: "col-md-8 col-md-offset-2 text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "footer-copyright"
-      }, "Copyright \xA9", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", null, "document.write(new Date().getFullYear());"), " All rights reserved | Team BNK"))))));
+      }, "Copyright \xA9", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", null, "document.write(new Date().getFullYear());"), " All rights reserved | Team BANK"))))));
     });
 
     return _this;
@@ -30302,7 +30296,7 @@ function (_Component) {
       }, "Join"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
         className: "custom-menu"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
-        to: "#"
+        to: "/profile"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
         className: "fa fa-user-o"
       }), " My Account")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
@@ -30310,19 +30304,11 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
         className: "fa fa-heart-o"
       }), " My Wishlist")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
-        to: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "fa fa-exchange"
-      }), " Compare")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
-        to: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "fa fa-check"
-      }), " Checkout")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
         to: "/login"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
         className: "fa fa-unlock-alt"
       }), " Login")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["NavLink"], {
-        to: "#"
+        to: "/register"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
         className: "fa fa-user-plus"
       }), " Create An Account"))))))))));
@@ -30810,14 +30796,14 @@ function (_Component) {
                 isAuthenticated: true,
                 loggedin: true
               });
-              console.log("!!!Logged In !!!", that.state.isAuthenticated);
+              console.log("!!! Logged In !!!", that.state.isAuthenticated);
             } else if (xhr.status == 404) {
               alert("either password or username is wrong!! try again !!");
               that.setState({
                 passwordError: "Password is wrong"
               });
             } else {
-              "server error";
+              alert("Sorry! The server didn't respond. Please, try again");
             }
           }
         };

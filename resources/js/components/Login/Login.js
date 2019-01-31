@@ -83,7 +83,7 @@ export default class Login extends Component {
                 isAuthenticated:true,
                 loggedin:true
               });
-              console.log("!!!Logged In !!!",that.state.isAuthenticated)
+              console.log("!!! Logged In !!!",that.state.isAuthenticated)
             }
             else if(xhr.status==404){
               alert("either password or username is wrong!! try again !!");
@@ -92,7 +92,7 @@ export default class Login extends Component {
               })
             }
             else{
-              "server error";
+              alert("Sorry! The server didn't respond. Please, try again");
             }
           }
       }
@@ -153,5 +153,4 @@ export default class Login extends Component {
     );
   }
 }
-
 

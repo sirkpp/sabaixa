@@ -47,11 +47,8 @@ export default class Footer extends Component {
                                 <div className="footer">
                                     <h3 className="footer-header">My Account</h3>
                                     <ul className="list-links">
-                                        <li><NavLink to='#' >My Account</NavLink></li>
-                                        <li><NavLink to='#' >My Wishlist</NavLink></li>
-                                        <li><NavLink to='#' >Compare</NavLink></li>
-                                        <li><NavLink to='#' >Checkout</NavLink></li>
-                                        <li><NavLink to='#' >Login</NavLink></li>
+                                        <li><NavLink to='/profile' >My Account</NavLink></li>
+                                        <li><NavLink to='/login' >Login</NavLink></li>
                                     </ul>
                                 </div>
                             </div>
@@ -96,7 +93,7 @@ export default class Footer extends Component {
 
                                 <div className="footer-copyright">
 
-                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Team BNK
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Team BANK
 
                                 </div>
 
