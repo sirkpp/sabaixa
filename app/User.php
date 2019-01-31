@@ -36,6 +36,6 @@ class User extends Authenticatable
         return $this->belongsToMany('App\Product');
     }
     public function ureview(){
-        return $this->belongsToMany('App\Review');
+        return $this->hasMany('App\Review');
     }
 }
