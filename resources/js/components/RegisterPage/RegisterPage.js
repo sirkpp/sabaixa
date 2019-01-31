@@ -109,21 +109,29 @@ export default class RegisterPage extends Component {
     console.log(event.target);
     const err = this.validateForm();
     if (!err) {
-      console.log(this.state);
-      this.setState({
-        userType: "",
-        userTypeError: "",
-        companyName: "",
-        companyNameError: "",
-        phoneNumber: "",
-        phoneNumberError: "",
-        email: "",
-        emailError: "",
-        password: "",
-        passwordError: "",
-        confirmPassword: "",
-        confirmPasswordError: ""
-      });
+      var xhr=new XMLHttpRequest();
+      xhr.open("POST","api/register?"+"_token="+document.querySelector("meta[name='csrf-token']").content+"&email="+this.state.email+"&name="+this.state.companyName+"&user_type="+this.state.userType+"&contact_no="+this.state.phoneNumber+"&password="+this.state.password);
+      xhr.onreadystatechange=function(){
+          if(xhr.readyState===4){
+            console.log(this.state);
+            this.setState({
+              userType: "",
+              userTypeError: "",
+              companyName: "",
+              companyNameError: "",
+              phoneNumber: "",
+              phoneNumberError: "",
+              email: "",
+              emailError: "",
+              password: "",
+              passwordError: "",
+              confirmPassword: "",
+              confirmPasswordError: ""
+            });
+          }
+      }
+      xhr.send();
+
     }
   };
 

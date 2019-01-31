@@ -58,13 +58,22 @@ export default class Login extends Component {
     console.log(event.target);
     const err = this.validateForm();
     if (!err) {
-      console.log(this.state);
-      this.setState({
-        username: "",
-        usernameerror: "",
-        password: "",
-        passwordError: ""
-      });
+      var xhr=new XMLHttpRequest();
+      xhr.open("POST","api/login?"+"_token="+document.querySelector("meta[name='csrf-token']").content+"&email="+this.state.username+"&password="+this.state.password);
+      xhr.onreadystatechange=function(){
+          if(xhr.readyState===4){
+            
+            console.log(xhr.response);
+            this.setState({
+              username: "",
+              usernameerror: "",
+              password: "",
+              passwordError: ""
+            });
+          }
+      }
+      xhr.send();
+
     }
   }
 

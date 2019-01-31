@@ -86,6 +86,44 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/Login/Login.css":
+/*!*********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/Login/Login.css ***!
+  \*********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "/* BASIC */\r\n\r\nhtml {\r\n  background-color: #56baed;\r\n}\r\n\r\nbody {\r\n  font-family: \"Poppins\", sans-serif;\r\n  height: 100vh;\r\n}\r\n\r\na {\r\n  display: inline-block;\r\n  text-decoration: none;\r\n  font-weight: 400;\r\n}\r\n\r\nh2 {\r\n  text-align: center;\r\n  font-size: 16px;\r\n  font-weight: 600;\r\n  text-transform: uppercase;\r\n  display: inline-block;\r\n  margin: 40px 8px 10px 8px;\r\n  color: #cccccc;\r\n}\r\n\r\n/* STRUCTURE */\r\n\r\n.wrapper {\r\n  display: flex;\r\n  align-items: center;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  width: 100%;\r\n  min-height: 100%;\r\n  padding: 20px;\r\n}\r\n\r\n#formContent {\r\n  border-radius: 10px 10px 10px 10px;\r\n  background: #fff;\r\n  padding: 30px;\r\n  width: 90%;\r\n  max-width: 450px;\r\n  position: relative;\r\n  padding: 0px;\r\n  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);\r\n  text-align: center;\r\n}\r\n\r\n#formFooter {\r\n  background-color: #f6f6f6;\r\n  border-top: 1px solid #dce8f1;\r\n  padding: 25px;\r\n  text-align: center;\r\n  border-radius: 0 0 10px 10px;\r\n}\r\n\r\n/* TABS */\r\n\r\nh2.inactive {\r\n  color: #cccccc;\r\n}\r\n\r\nh2.active {\r\n  color: #0d0d0d;\r\n  border-bottom: 2px solid #5fbae9;\r\n}\r\n\r\n/* FORM TYPOGRAPHY*/\r\n\r\ninput[type=\"button\"],\r\ninput[type=\"submit\"],\r\ninput[type=\"reset\"] {\r\n  background-color: #56baed;\r\n  border: none;\r\n  color: white;\r\n  padding: 15px 80px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n  text-transform: uppercase;\r\n  font-size: 13px;\r\n  box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);\r\n  border-radius: 5px 5px 5px 5px;\r\n  margin: 5px 20px 40px 20px;\r\n  transition: all 0.3s ease-in-out;\r\n}\r\n\r\ninput[type=\"button\"]:hover,\r\ninput[type=\"submit\"]:hover,\r\ninput[type=\"reset\"]:hover {\r\n  background-color: #39ace7;\r\n}\r\n\r\ninput[type=\"button\"]:active,\r\ninput[type=\"submit\"]:active,\r\ninput[type=\"reset\"]:active {\r\n  -webkit-transform: scale(0.95);\r\n  transform: scale(0.95);\r\n}\r\n\r\ninput[type=\"text\"],\r\ninput[type=\"password\"] {\r\n  background-color: #f6f6f6;\r\n  border: none;\r\n  color: #0d0d0d;\r\n  padding: 15px 32px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  display: inline-block;\r\n  font-size: 16px;\r\n  margin: 5px;\r\n  width: 85%;\r\n  border: 2px solid #f6f6f6;\r\n  transition: all 0.5s ease-in-out;\r\n  border-radius: 5px 5px 5px 5px;\r\n}\r\n\r\ninput[type=\"text\"]:focus {\r\n  background-color: #fff;\r\n  border-bottom: 2px solid #5fbae9;\r\n}\r\n\r\ninput[type=\"text\"]:placeholder {\r\n  color: #cccccc;\r\n}\r\n\r\n.submit-button {\r\n  margin: 10px;\r\n  margin-bottom: 10%;\r\n  justify-content: center;\r\n  color: white;\r\n  width: 85%;\r\n  height: 55px;\r\n  background-color: #56baed;\r\n  border: none;\r\n  padding: 10px;\r\n  font-size: 18px;\r\n  margin-left: 10px;\r\n  border-radius: 3px;\r\n}\r\n\r\n.submit-button:hover {\r\n  background-color: #39ace7;\r\n}\r\n\r\n/* input error messages */\r\n.error-message {\r\n  color: rgb(138, 14, 14);\r\n  padding: 5px 0px;\r\n  font-size: 16px;\r\n}\r\n\r\n/* ANIMATIONS */\r\n\r\n/* Simple CSS3 Fade-in-down Animation */\r\n.fadeInDown {\r\n  -webkit-animation-name: fadeInDown;\r\n  animation-name: fadeInDown;\r\n  -webkit-animation-duration: 1s;\r\n  animation-duration: 1s;\r\n  -webkit-animation-fill-mode: both;\r\n  animation-fill-mode: both;\r\n}\r\n\r\n@-webkit-keyframes fadeInDown {\r\n  0% {\r\n    opacity: 0;\r\n    -webkit-transform: translate3d(0, -100%, 0);\r\n    transform: translate3d(0, -100%, 0);\r\n  }\r\n  100% {\r\n    opacity: 1;\r\n    -webkit-transform: none;\r\n    transform: none;\r\n  }\r\n}\r\n\r\n@keyframes fadeInDown {\r\n  0% {\r\n    opacity: 0;\r\n    -webkit-transform: translate3d(0, -100%, 0);\r\n    transform: translate3d(0, -100%, 0);\r\n  }\r\n  100% {\r\n    opacity: 1;\r\n    -webkit-transform: none;\r\n    transform: none;\r\n  }\r\n}\r\n\r\n/* Simple CSS3 Fade-in Animation */\r\n@-webkit-keyframes fadeIn {\r\n  from {\r\n    opacity: 0;\r\n  }\r\n  to {\r\n    opacity: 1;\r\n  }\r\n}\r\n@keyframes fadeIn {\r\n  from {\r\n    opacity: 0;\r\n  }\r\n  to {\r\n    opacity: 1;\r\n  }\r\n}\r\n\r\n.fadeIn {\r\n  opacity: 0;\r\n  -webkit-animation: fadeIn ease-in 1;\r\n  animation: fadeIn ease-in 1;\r\n\r\n  -webkit-animation-fill-mode: forwards;\r\n  animation-fill-mode: forwards;\r\n\r\n  -webkit-animation-duration: 1s;\r\n  animation-duration: 1s;\r\n}\r\n\r\n.fadeIn.first {\r\n  -webkit-animation-delay: 0.4s;\r\n  animation-delay: 0.4s;\r\n}\r\n\r\n.fadeIn.second {\r\n  -webkit-animation-delay: 0.6s;\r\n  animation-delay: 0.6s;\r\n}\r\n\r\n.fadeIn.third {\r\n  -webkit-animation-delay: 0.8s;\r\n  animation-delay: 0.8s;\r\n}\r\n\r\n.fadeIn.fourth {\r\n  -webkit-animation-delay: 1s;\r\n  animation-delay: 1s;\r\n}\r\n\r\n/* Simple CSS3 Fade-in Animation */\r\n.underlineHover:after {\r\n  display: block;\r\n  left: 0;\r\n  bottom: -10px;\r\n  width: 0;\r\n  height: 2px;\r\n  background-color: #56baed;\r\n  content: \"\";\r\n  transition: width 0.2s;\r\n}\r\n\r\n.underlineHover:hover {\r\n  color: #0d0d0d;\r\n}\r\n\r\n.underlineHover:hover:after {\r\n  width: 100%;\r\n}\r\n\r\n/* OTHERS */\r\n\r\n*:focus {\r\n  outline: none;\r\n}\r\n\r\n#icon {\r\n  margin-top: 25px;\r\n  color: #adadad;\r\n  width: 60%;\r\n  font-size: 65px;\r\n}\r\n\r\n.resetpassform {\r\n  display: inline-block;\r\n}\r\ninput[type=\"submit\"] .left {\r\n  display: inline-block;\r\n  left: 5px;\r\n}\r\ninput[type=\"submit\"] .right {\r\n  display: inline-block;\r\n  right: 5px;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/RegisterPage/RegisterPage.css":
+/*!***********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/components/RegisterPage/RegisterPage.css ***!
+  \***********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".wrapper {\r\n  display: flex;\r\n  align-items: center;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  width: 100%;\r\n  min-height: 100%;\r\n  padding: 20px;\r\n}\r\n\r\n.login-k {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  justify-content: center;\r\n  margin-left: 15%;\r\n  margin-right: 15%;\r\n  margin-top: 20px;\r\n  border-radius: 10px 10px 10px 10px;\r\n  background: #fff;\r\n  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);\r\n}\r\n\r\n.login-k .login-container {\r\n  padding: 50px 30px;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n}\r\n.login-k .form-box {\r\n  display: inline-block;\r\n  padding: 10px;\r\n  width: 50%;\r\n}\r\n.login-k .form-box .form-field {\r\n  font-size: 18px;\r\n  color: #0c7d99;\r\n  font-weight: 600;\r\n}\r\n.login-k .form-box .select-field,\r\n.login-k .form-box .input-box {\r\n  width: 90%;\r\n  padding: 10px 15px;\r\n  color: #000000;\r\n  background-color: #f6f6f6;\r\n  border: none;\r\n  border-radius: 3px;\r\n  font-size: 16px;\r\n}\r\n\r\n.login-k .form-box .error-message {\r\n  color: rgb(138, 14, 14);\r\n  padding: 5px 0px;\r\n  font-size: 16px;\r\n}\r\n\r\n.login-k .submit-button {\r\n  margin-bottom: 10px;\r\n  color: white;\r\n  width: 94%;\r\n  background-color: #56baed;\r\n  border: none;\r\n  padding: 10px;\r\n  font-size: 18px;\r\n  margin-left: 10px;\r\n  border-radius: 3px;\r\n}\r\n.login-k .submit-button:hover {\r\n  background-color: #39ace7;\r\n}\r\n\r\n@media screen and (max-width: 800px) {\r\n  .login-k {\r\n    margin-left: 5%;\r\n    margin-right: 5%;\r\n  }\r\n}\r\n@media screen and (max-width: 620px) {\r\n  .login-k {\r\n    margin: 0px;\r\n    margin-top: 10px;\r\n  }\r\n  .login-k .form-box {\r\n    width: 90%;\r\n  }\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/Header.css":
 /*!*********************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/css/Header.css ***!
@@ -143,25 +181,6 @@ exports.push([module.i, ".product-view {\r\n  width: 30%;\r\n  border: 1px solid
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/RegisterPage.css":
-/*!***************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/css/RegisterPage.css ***!
-  \***************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".login-k {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  justify-content: center;\r\n  margin-left: 15%;\r\n  margin-right: 15%;\r\n  margin-top: 30px;\r\n  border-radius: 10px; }\r\n  .login-k .box-title {\r\n    color: #990c0c; }\r\n  .login-k .login-container {\r\n    padding: 50px 30px;\r\n    display: flex;\r\n    flex-wrap: wrap; }\r\n  .login-k .form-box {\r\n    display: inline-block;\r\n    padding: 10px;\r\n    width: 50%; }\r\n    .login-k .form-box .form-field {\r\n      font-size: 18px;\r\n      color: #990c0c;\r\n      font-weight: 600; }\r\n    .login-k .form-box .select-field, .login-k .form-box .input-box {\r\n      width: 90%;\r\n      padding: 5px 10px;\r\n      border: 1px solid #990c0c;\r\n      border-radius: 3px;\r\n      font-size: 20px; }\r\n    .login-k .form-box .error-message {\r\n      color: red;\r\n      padding: 5px 0px;\r\n      font-size: 16px; }\r\n  .login-k .submit-button {\r\n    color: white;\r\n    background: #990c0c;\r\n    border: none;\r\n    padding: 10px;\r\n    font-size: 18px;\r\n    margin-left: 10px;\r\n    border-radius: 3px; }\r\n  .login-k .submit-button:hover {\r\n    background: red; }\r\n\r\n@media screen and (max-width: 800px) {\r\n  .login-k {\r\n    margin-left: 5%;\r\n    margin-right: 5%; } }\r\n@media screen and (max-width: 620px) {\r\n  .login-k {\r\n    margin: 0px; }\r\n    .login-k .form-box {\r\n      width: 90%; } }\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/navigation.css":
 /*!*************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/css/navigation.css ***!
@@ -212,7 +231,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "@charset 'UTF-8';\n/* Slider *//*\n.slick-loading .slick-list\n{\n    background: #fff url('./ajax-loader.gif') center center no-repeat;\n}\n\n/* Icons *//*\n@font-face\n{\n    font-family: 'slick';\n    font-weight: normal;\n    font-style: normal;\n\n    src: url('./fonts/slick.eot');\n    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');\n}\n/* Arrows */\n.slick-prev,\n.slick-next\n{\n    font-size: 0;\n    line-height: 0;\n\n    position: absolute;\n    top: 50%;\n\n    display: block;\n\n    width: 20px;\n    height: 20px;\n    padding: 0;\n    -webkit-transform: translate(0, -50%);\n    transform: translate(0, -50%);\n\n    cursor: pointer;\n\n    color: transparent;\n    border: none;\n    outline: none;\n    background: transparent;\n}\n.slick-prev:hover,\n.slick-prev:focus,\n.slick-next:hover,\n.slick-next:focus\n{\n    color: transparent;\n    outline: none;\n    background: transparent;\n}\n.slick-prev:hover:before,\n.slick-prev:focus:before,\n.slick-next:hover:before,\n.slick-next:focus:before\n{\n    opacity: 1;\n}\n.slick-prev.slick-disabled:before,\n.slick-next.slick-disabled:before\n{\n    opacity: .25;\n}\n\n.slick-prev:before,\n.slick-next:before\n{\n    font-family: 'slick';\n    font-size: 20px;\n    line-height: 1;\n\n    opacity: .75;\n    color: white;\n\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\n.slick-prev\n{\n    left: -25px;\n}\n[dir='rtl'] .slick-prev\n{\n    right: -25px;\n    left: auto;\n}\n.slick-prev:before\n{\n    content: '\\2190';\n}\n[dir='rtl'] .slick-prev:before\n{\n    content: '\\2192';\n}\n\n.slick-next\n{\n    right: -25px;\n}\n[dir='rtl'] .slick-next\n{\n    right: auto;\n    left: -25px;\n}\n.slick-next:before\n{\n    content: '\\2192';\n}\n[dir='rtl'] .slick-next:before\n{\n    content: '\\2190';\n}\n\n/* Dots */\n.slick-dotted.slick-slider\n{\n    margin-bottom: 30px;\n}\n\n.slick-dots\n{\n    position: absolute;\n    bottom: -25px;\n\n    display: block;\n\n    width: 100%;\n    padding: 0;\n    margin: 0;\n\n    list-style: none;\n\n    text-align: center;\n}\n.slick-dots li\n{\n    position: relative;\n\n    display: inline-block;\n\n    width: 20px;\n    height: 20px;\n    margin: 0 5px;\n    padding: 0;\n\n    cursor: pointer;\n}\n.slick-dots li button\n{\n    font-size: 0;\n    line-height: 0;\n\n    display: block;\n\n    width: 20px;\n    height: 20px;\n    padding: 5px;\n\n    cursor: pointer;\n\n    color: transparent;\n    border: 0;\n    outline: none;\n    background: transparent;\n}\n.slick-dots li button:hover,\n.slick-dots li button:focus\n{\n    outline: none;\n}\n.slick-dots li button:hover:before,\n.slick-dots li button:focus:before\n{\n    opacity: 1;\n}\n.slick-dots li button:before\n{\n    font-family: 'slick';\n    font-size: 6px;\n    line-height: 20px;\n\n    position: absolute;\n    top: 0;\n    left: 0;\n\n    width: 20px;\n    height: 20px;\n\n    content: '\\2022';\n    text-align: center;\n\n    opacity: .25;\n    color: black;\n\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n.slick-dots li.slick-active button:before\n{\n    opacity: .75;\n    color: black;\n}\n", ""]);
+exports.push([module.i, "@charset 'UTF-8';\r\n/* Slider *//*\r\n.slick-loading .slick-list\r\n{\r\n    background: #fff url('./ajax-loader.gif') center center no-repeat;\r\n}\r\n\r\n/* Icons *//*\r\n@font-face\r\n{\r\n    font-family: 'slick';\r\n    font-weight: normal;\r\n    font-style: normal;\r\n\r\n    src: url('./fonts/slick.eot');\r\n    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');\r\n}\r\n/* Arrows */\r\n.slick-prev,\r\n.slick-next\r\n{\r\n    font-size: 0;\r\n    line-height: 0;\r\n\r\n    position: absolute;\r\n    top: 50%;\r\n\r\n    display: block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    padding: 0;\r\n    -webkit-transform: translate(0, -50%);\r\n    transform: translate(0, -50%);\r\n\r\n    cursor: pointer;\r\n\r\n    color: transparent;\r\n    border: none;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-prev:hover,\r\n.slick-prev:focus,\r\n.slick-next:hover,\r\n.slick-next:focus\r\n{\r\n    color: transparent;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-prev:hover:before,\r\n.slick-prev:focus:before,\r\n.slick-next:hover:before,\r\n.slick-next:focus:before\r\n{\r\n    opacity: 1;\r\n}\r\n.slick-prev.slick-disabled:before,\r\n.slick-next.slick-disabled:before\r\n{\r\n    opacity: .25;\r\n}\r\n\r\n.slick-prev:before,\r\n.slick-next:before\r\n{\r\n    font-family: 'slick';\r\n    font-size: 20px;\r\n    line-height: 1;\r\n\r\n    opacity: .75;\r\n    color: white;\r\n\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\n.slick-prev\r\n{\r\n    left: -25px;\r\n}\r\n[dir='rtl'] .slick-prev\r\n{\r\n    right: -25px;\r\n    left: auto;\r\n}\r\n.slick-prev:before\r\n{\r\n    content: '\\2190';\r\n}\r\n[dir='rtl'] .slick-prev:before\r\n{\r\n    content: '\\2192';\r\n}\r\n\r\n.slick-next\r\n{\r\n    right: -25px;\r\n}\r\n[dir='rtl'] .slick-next\r\n{\r\n    right: auto;\r\n    left: -25px;\r\n}\r\n.slick-next:before\r\n{\r\n    content: '\\2192';\r\n}\r\n[dir='rtl'] .slick-next:before\r\n{\r\n    content: '\\2190';\r\n}\r\n\r\n/* Dots */\r\n.slick-dotted.slick-slider\r\n{\r\n    margin-bottom: 30px;\r\n}\r\n\r\n.slick-dots\r\n{\r\n    position: absolute;\r\n    bottom: -25px;\r\n\r\n    display: block;\r\n\r\n    width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n\r\n    list-style: none;\r\n\r\n    text-align: center;\r\n}\r\n.slick-dots li\r\n{\r\n    position: relative;\r\n\r\n    display: inline-block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    margin: 0 5px;\r\n    padding: 0;\r\n\r\n    cursor: pointer;\r\n}\r\n.slick-dots li button\r\n{\r\n    font-size: 0;\r\n    line-height: 0;\r\n\r\n    display: block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    padding: 5px;\r\n\r\n    cursor: pointer;\r\n\r\n    color: transparent;\r\n    border: 0;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-dots li button:hover,\r\n.slick-dots li button:focus\r\n{\r\n    outline: none;\r\n}\r\n.slick-dots li button:hover:before,\r\n.slick-dots li button:focus:before\r\n{\r\n    opacity: 1;\r\n}\r\n.slick-dots li button:before\r\n{\r\n    font-family: 'slick';\r\n    font-size: 6px;\r\n    line-height: 20px;\r\n\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n\r\n    content: '\\2022';\r\n    text-align: center;\r\n\r\n    opacity: .25;\r\n    color: black;\r\n\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n}\r\n.slick-dots li.slick-active button:before\r\n{\r\n    opacity: .75;\r\n    color: black;\r\n}\r\n", ""]);
 
 // exports
 
@@ -231,7 +250,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
+exports.push([module.i, "/* Slider */\r\n.slick-slider\r\n{\r\n    position: relative;\r\n\r\n    display: block;\r\n    box-sizing: border-box;\r\n\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\r\n\r\n    -webkit-touch-callout: none;\r\n    -khtml-user-select: none;\r\n    touch-action: pan-y;\r\n    -webkit-tap-highlight-color: transparent;\r\n}\r\n\r\n.slick-list\r\n{\r\n    position: relative;\r\n\r\n    display: block;\r\n    overflow: hidden;\r\n\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n.slick-list:focus\r\n{\r\n    outline: none;\r\n}\r\n.slick-list.dragging\r\n{\r\n    cursor: pointer;\r\n    cursor: hand;\r\n}\r\n\r\n.slick-slider .slick-track,\r\n.slick-slider .slick-list\r\n{\r\n    -webkit-transform: translate3d(0, 0, 0);\r\n            transform: translate3d(0, 0, 0);\r\n}\r\n\r\n.slick-track\r\n{\r\n    position: relative;\r\n    top: 0;\r\n    left: 0;\r\n\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.slick-track:before,\r\n.slick-track:after\r\n{\r\n    display: table;\r\n\r\n    content: '';\r\n}\r\n.slick-track:after\r\n{\r\n    clear: both;\r\n}\r\n.slick-loading .slick-track\r\n{\r\n    visibility: hidden;\r\n}\r\n\r\n.slick-slide\r\n{\r\n    display: none;\r\n    float: left;\r\n\r\n    height: 100%;\r\n    min-height: 1px;\r\n}\r\n[dir='rtl'] .slick-slide\r\n{\r\n    float: right;\r\n}\r\n.slick-slide img\r\n{\r\n    display: block;\r\n}\r\n.slick-slide.slick-loading img\r\n{\r\n    display: none;\r\n}\r\n.slick-slide.dragging img\r\n{\r\n    pointer-events: none;\r\n}\r\n.slick-initialized .slick-slide\r\n{\r\n    display: block;\r\n}\r\n.slick-loading .slick-slide\r\n{\r\n    visibility: hidden;\r\n}\r\n.slick-vertical .slick-slide\r\n{\r\n    display: block;\r\n\r\n    height: auto;\r\n\r\n    border: 1px solid transparent;\r\n}\r\n.slick-arrow.slick-hidden {\r\n    display: none;\r\n}\r\n", ""]);
 
 // exports
 
@@ -29358,19 +29377,53 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./resources/js/components/LoginPage.js":
-/*!**********************************************!*\
-  !*** ./resources/js/components/LoginPage.js ***!
-  \**********************************************/
+/***/ "./resources/js/components/Login/Login.css":
+/*!*************************************************!*\
+  !*** ./resources/js/components/Login/Login.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/postcss-loader/src??ref--6-2!./Login.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/Login/Login.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/js/components/Login/Login.js":
+/*!************************************************!*\
+  !*** ./resources/js/components/Login/Login.js ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return LoginPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Login; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Login_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Login.css */ "./resources/js/components/Login/Login.css");
+/* harmony import */ var _Login_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Login_css__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -29390,40 +29443,100 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
- //import "./Login.css";
 
-var LoginPage =
+
+var maintainmargin = {
+  margin: "30px"
+};
+
+var Login =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(LoginPage, _Component);
+  _inherits(Login, _Component);
 
-  function LoginPage(props) {
+  function Login() {
     var _this;
 
-    _classCallCheck(this, LoginPage);
+    _classCallCheck(this, Login);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(LoginPage).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Login).call(this));
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleChange", function (e) {
-      _this.setState(_defineProperty({}, e.target.name, e.target.value));
-    });
+    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "validateForm", function () {
+      var isError = false;
+      var errors = {};
 
-    _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "handleSubmit", function (event) {
-      console.log(_this.state);
-      event.preventDefault();
+      if (_this.state.username.length < 1) {
+        isError = true;
+        errors.usernameerror = "enter valid username";
+      } else {
+        errors.usernameerror = "";
+      }
+
+      if (_this.state.password.length < 8) {
+        isError = true;
+        errors.passworderror = "password should be atleast 8 characters long";
+      } else {
+        errors.passworderror = "";
+      }
+
+      if (isError) {
+        _this.setState(_objectSpread({}, _this.state, errors));
+      }
+
+      return isError;
     });
 
     _this.state = {
-      email: "krihnapd133@gmail.com",
-      password: "*****"
+      username: "",
+      usernameerror: "",
+      password: "",
+      passworderror: ""
     };
+    _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_assertThisInitialized(_this)));
     return _this;
   }
 
-  _createClass(LoginPage, [{
-    key: "validateForm",
-    value: function validateForm() {
-      return this.state.email.length > 0 && this.state.password.length > 0;
+  _createClass(Login, [{
+    key: "handleChange",
+    value: function handleChange(e) {
+      var _e$target = e.target,
+          name = _e$target.name,
+          value = _e$target.value;
+      this.setState(_defineProperty({}, name, value));
+    }
+  }, {
+    key: "handleSubmit",
+    value: function handleSubmit(event) {
+      event.preventDefault();
+      console.log(event.target);
+      var err = this.validateForm();
+
+      if (!err) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "api/login?" + "_token=" + document.querySelector("meta[name='csrf-token']").content + "&email=" + this.state.username + "&password=" + this.state.password);
+
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            console.log(xhr.response);
+            this.setState({
+              username: "",
+              usernameerror: "",
+              password: "",
+              passwordError: ""
+            });
+          }
+        };
+
+        xhr.send();
+      }
+    }
+  }, {
+    key: "ComponentDidMount",
+    value: function ComponentDidMount() {
+      this.setState({
+        notamember: false
+      });
     }
   }, {
     key: "render",
@@ -29431,40 +29544,45 @@ function (_Component) {
       var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "Login"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        onSubmit: this.handleSubmit
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        controlId: "email",
-        bsSize: "large"
-      }, "Email", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        name: "email",
-        placeholder: "email",
-        value: this.state.email,
-        onChange: function onChange(e) {
-          return _this2.handleChange(e);
-        }
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        controlId: "password",
-        bsSize: "large"
-      }, "Password", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        className: "wrapper fadeInDown"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "formContent",
+        style: maintainmargin
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "fadeIn first profile-userpic"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "glyphicon glyphicon-user",
+        id: "icon"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "text",
+        id: "login",
+        className: "fadeIn second",
+        name: "username",
+        placeholder: "username",
+        value: this.state.username,
+        onChange: this.handleChange
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "error-message"
+      }, " ", this.state.usernameerror), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+        type: "password",
+        id: "password",
+        className: "fadeIn third",
         name: "password",
         placeholder: "password",
-        type: "password",
         value: this.state.password,
-        onChange: function onChange(e) {
-          return _this2.handleChange(e);
-        }
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        type: "submit",
+        onChange: this.handleChange
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "error-message"
+      }, " ", this.state.passworderror), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "submit-button fadeIn fourth",
         onClick: function onClick(e) {
           return _this2.handleSubmit(e);
         }
-      }, "submit")));
+      }, "Login"))));
     }
   }]);
 
-  return LoginPage;
+  return Login;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
@@ -31014,10 +31132,40 @@ function (_Component) {
 
 /***/ }),
 
-/***/ "./resources/js/components/RegisterPage.js":
-/*!*************************************************!*\
-  !*** ./resources/js/components/RegisterPage.js ***!
-  \*************************************************/
+/***/ "./resources/js/components/RegisterPage/RegisterPage.css":
+/*!***************************************************************!*\
+  !*** ./resources/js/components/RegisterPage/RegisterPage.css ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--6-1!../../../../node_modules/postcss-loader/src??ref--6-2!./RegisterPage.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/components/RegisterPage/RegisterPage.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./resources/js/components/RegisterPage/RegisterPage.js":
+/*!**************************************************************!*\
+  !*** ./resources/js/components/RegisterPage/RegisterPage.js ***!
+  \**************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -31026,8 +31174,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RegisterPage; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_RegisterPage_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../css/RegisterPage.css */ "./resources/js/css/RegisterPage.css");
-/* harmony import */ var _css_RegisterPage_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_RegisterPage_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _RegisterPage_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./RegisterPage.css */ "./resources/js/components/RegisterPage/RegisterPage.css");
+/* harmony import */ var _RegisterPage_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_RegisterPage_css__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
@@ -31051,7 +31199,10 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
- //import "./Login.css";
+
+var maintainmargin = {
+  margin: "30px"
+};
 
 var RegisterPage =
 /*#__PURE__*/
@@ -31106,7 +31257,7 @@ function (_Component) {
         errors.emailError = "";
       }
 
-      if (_this.state.phoneNumber.length < 9 && !isNaN(_this.state.phoneNumber)) {
+      if (_this.state.phoneNumber.length < 10 && !isNaN(_this.state.phoneNumber)) {
         isError = true;
         errors.phoneNumberError = "invalid Phone number";
       } else {
@@ -31145,34 +31296,30 @@ function (_Component) {
       var err = _this.validateForm();
 
       if (!err) {
-        fetch('/register', {
-          method: 'post',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: {
-            user_type: event.target.userType,
-            company_name: event.target.companyName,
-            phone_number: event.target.phoneNumber,
-            email: event.target.email,
-            password: event.target.password
-          }
-        });
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "api/register?" + "_token=" + document.querySelector("meta[name='csrf-token']").content + "&email=" + _this.state.email + "&name=" + _this.state.companyName + "&user_type=" + _this.state.userType + "&contact_no=" + _this.state.phoneNumber + "&password=" + _this.state.password);
 
-        _this.setState({
-          userType: "",
-          userTypeError: "",
-          companyName: "",
-          companyNameError: "",
-          phoneNumber: "",
-          phoneNumberError: "",
-          email: "",
-          emailError: "",
-          password: "",
-          passwordError: "",
-          confirmPassword: "",
-          confirmPasswordError: ""
-        });
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            console.log(this.state);
+            this.setState({
+              userType: "",
+              userTypeError: "",
+              companyName: "",
+              companyNameError: "",
+              phoneNumber: "",
+              phoneNumberError: "",
+              email: "",
+              emailError: "",
+              password: "",
+              passwordError: "",
+              confirmPassword: "",
+              confirmPasswordError: ""
+            });
+          }
+        };
+
+        xhr.send();
       }
     });
 
@@ -31199,20 +31346,26 @@ function (_Component) {
       var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "login-k"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "box-title"
-      }, "Register Here"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "wrapper fadeInDown"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "login-k",
+        style: maintainmargin
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "fadeIn first profile-userpic"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "glyphicon glyphicon-user",
+        id: "icon"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "login-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-field"
+        class: "form-field fadeIn second"
       }, "Choose Type"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
         onChange: function onChange(e) {
           return _this2._submitHandleChange(e);
         },
-        className: "select-field"
+        className: "select-field fadeIn third"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "select"
       }, "select"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -31226,11 +31379,11 @@ function (_Component) {
       }, "Transport Agency")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, " ", this.state.userTypeError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box"
+        class: "form-box fadeIn second"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Enter your company name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box",
+        className: "input-box fadeIn third",
         name: "companyName",
         placeholder: "company name",
         value: this.state.companyName,
@@ -31240,11 +31393,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.companyNameError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box"
+        class: "form-box fadeIn second"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Enter email address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box",
+        className: "input-box fadeIn third",
         name: "email",
         placeholder: "email",
         type: "email",
@@ -31255,11 +31408,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.emailError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box"
+        class: "form-box fadeIn third"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Conact Number"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box",
+        className: "input-box fadeIn fourth",
         name: "phoneNumber",
         placeholder: "phone number",
         value: this.state.phoneNumber,
@@ -31269,11 +31422,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.phoneNumberError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box"
+        class: "form-box fadeIn third"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box",
+        className: "input-box fadeIn fourth",
         name: "password",
         placeholder: "password",
         type: "password",
@@ -31284,7 +31437,7 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.passwordError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box"
+        class: "form-box fadeIn fourth"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Re-enter Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -31299,11 +31452,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.confirmPasswordError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "submit-button",
+        className: "submit-button fadeIn fourth",
         onClick: function onClick(e) {
           return _this2.handleSubmit(e);
         }
-      }, "submit"))));
+      }, "Sign Up")))));
     }
   }]);
 
@@ -31869,36 +32022,6 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./resources/js/css/RegisterPage.css":
-/*!*******************************************!*\
-  !*** ./resources/js/css/RegisterPage.css ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!./RegisterPage.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/RegisterPage.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
 /***/ "./resources/js/css/navigation.css":
 /*!*****************************************!*\
   !*** ./resources/js/css/navigation.css ***!
@@ -32128,16 +32251,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/Header */ "./resources/js/components/Header.js");
 /* harmony import */ var _components_MainPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/MainPage */ "./resources/js/components/MainPage.js");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Footer */ "./resources/js/components/Footer.js");
-/* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./css/slick.css */ "./resources/js/css/slick.css");
-/* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_css_slick_css__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _css_slick_theme_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./css/slick-theme.css */ "./resources/js/css/slick-theme.css");
-/* harmony import */ var _css_slick_theme_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_css_slick_theme_css__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./css/nouislider.min.css */ "./resources/js/css/nouislider.min.css");
-/* harmony import */ var _css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./css/style.css */ "./resources/js/css/style.css");
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _components_LoginPage__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/LoginPage */ "./resources/js/components/LoginPage.js");
-/* harmony import */ var _components_RegisterPage__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/RegisterPage */ "./resources/js/components/RegisterPage.js");
+/* harmony import */ var _components_Login_Login__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Login/Login */ "./resources/js/components/Login/Login.js");
+/* harmony import */ var _components_RegisterPage_RegisterPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/RegisterPage/RegisterPage */ "./resources/js/components/RegisterPage/RegisterPage.js");
+/* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./css/slick.css */ "./resources/js/css/slick.css");
+/* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_css_slick_css__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _css_slick_theme_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./css/slick-theme.css */ "./resources/js/css/slick-theme.css");
+/* harmony import */ var _css_slick_theme_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_css_slick_theme_css__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./css/nouislider.min.css */ "./resources/js/css/nouislider.min.css");
+/* harmony import */ var _css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./css/style.css */ "./resources/js/css/style.css");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_13__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32163,7 +32286,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
- //import "./css/bootstrap.min.css";
 
 
 
@@ -32192,7 +32314,7 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/register",
-        component: _components_RegisterPage__WEBPACK_IMPORTED_MODULE_13__["default"]
+        component: _components_RegisterPage_RegisterPage__WEBPACK_IMPORTED_MODULE_9__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/",
         component: _components_Home__WEBPACK_IMPORTED_MODULE_2__["default"],
@@ -32202,7 +32324,7 @@ function (_Component) {
         component: _components_Navigation__WEBPACK_IMPORTED_MODULE_4__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/login",
-        component: _components_LoginPage__WEBPACK_IMPORTED_MODULE_12__["default"],
+        component: _components_Login_Login__WEBPACK_IMPORTED_MODULE_8__["default"],
         exact: true
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/new",
@@ -32338,8 +32460,8 @@ function unregister() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\locusbnk\sabaixa\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\locusbnk\sabaixa\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! F:\xamp\htdocs\sabaixa\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! F:\xamp\htdocs\sabaixa\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
