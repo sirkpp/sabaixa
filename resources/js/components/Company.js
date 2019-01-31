@@ -3,17 +3,17 @@ import Product from "./Product";
 import "./../css/company.css";
 
 export default class Company extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            product: [],
+            company: [],
             isLoaded: false,
 
         }
     }
 
     componentDidMount() {
-        fetch('/api/product')
+        fetch('/api/user/' + this.props.info[0] + '/' + this.props.info[1])
             .then(response => {
                 return (response.json());
             })
@@ -21,29 +21,39 @@ export default class Company extends Component {
                 //Fetched product is stored in the state
                 this.setState({
                     isLoaded: true,
-                    product: json,
+                    company: json,
                 });
             });
     }
 
 
 
+
+
+
     render = () => {
-        var { isLoaded, product } = this.state;
-        return (
-            <div className="ind-company">
-                <div className="company-header">
-                    <h3><span> Experience : 3years </span>    BNK group pvt. Ltd.</h3>
-                </div>
-                <div className="body-content">
-                    
+        var { isLoaded, company } = this.state;
+        if (!isLoaded) {
+            return (
+                <h1>Loading........</h1>
+            )
+        }
+        else {
+
+            return (
+                <div className="ind-company">
+                    <div className="company-header">
+                        <h3><span> Experience : {company.experience} years </span>    {company.name}</h3>
+                    </div>
+                    <div className="body-content">
+
                         <div className="products">
 
                             {
                                 <div className="product">
-                                    {product.map(item => (
+                                    {company.main_product(item => (
                                         <div className="ind-product" key={item.id}>
-                                            <Product data={[item.img_path, "/register", item.product_name, item.product_type, item.product_detail, "kathmandu"]} />
+                                            <Product data={item.id} />
                                         </div>
                                     ))}
                                 </div>
@@ -54,31 +64,31 @@ export default class Company extends Component {
                         <div className="details">
                             <ul>
                                 <li>
-                                    <span className="title-k">Main Products </span>: Apples, Shoes, Mangoes
-                            </li> 
+                                    <span className="title-k">Main Products </span>: {company.main_products}
+                                </li>
                                 <li>
-                                <span className="title-k">Country/Region </span> : Nepal, Kathmandu
-                            </li>
+                                    <span className="title-k">Country/Region </span> : {company.location}
+                                </li>
                                 <li>
-                                <span className="title-k">Total Revenue </span> : Rs. 50 lakh
-                            </li>
+                                    <span className="title-k">Total Revenue </span> : Rs. {company.total_revenue} lakh
+                                </li>
                                 <li>
-                                <span className="title-k">Top Markets </span> : Kathmandu, Biratnagar, Delhi
-                            </li>
+                                    <span className="title-k">Top Markets </span> : {company.top_markets}
+                                </li>
                                 <li>
-                                <span className="title-k">Response Rate </span> : 80%
-                            </li>
+                                    <span className="title-k">Response Rate </span> : {company.service_rating}
+                                </li>
                             </ul>
                         </div>
-                   
-                </div>
-                <div>
-                    <button>Contact</button>
-                    <button>
-                        Leave Message
+                    </div>
+                    <div>
+                        <button>Contact</button>
+                        <button>
+                            Leave Message
                     </button>
+                    </div>
                 </div>
-            </div>
-        );
+            );
+        }
     }
 }

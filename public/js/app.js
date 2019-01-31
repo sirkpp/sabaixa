@@ -181,26 +181,6 @@ exports.push([module.i, ".product-view {\r\n  width: 30%;\r\n  min-height: 250px
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/RegisterPage.css":
-/*!***************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/css/RegisterPage.css ***!
-  \***************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, ".login-k {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  justify-content: center;\r\n  margin-left: 15%;\r\n  margin-right: 15%;\r\n  margin-top: 30px;\r\n  border-radius: 10px; }\r\n  .login-k .box-title {\r\n    color: #990c0c; }\r\n  .login-k .login-container {\r\n    padding: 50px 30px;\r\n    display: flex;\r\n    flex-wrap: wrap; }\r\n  .login-k .form-box {\r\n    display: inline-block;\r\n    padding: 10px;\r\n    width: 50%; }\r\n    .login-k .form-box .form-field {\r\n      font-size: 18px;\r\n      color: #990c0c;\r\n      font-weight: 600; }\r\n    .login-k .form-box .select-field, .login-k .form-box .input-box {\r\n      width: 90%;\r\n      padding: 5px 10px;\r\n      border: 1px solid #990c0c;\r\n      border-radius: 3px;\r\n      font-size: 20px; }\r\n    .login-k .form-box .error-message {\r\n      color: red;\r\n      padding: 5px 0px;\r\n      font-size: 16px; }\r\n  .login-k .submit-button {\r\n    color: white;\r\n    background: #990c0c;\r\n    border: none;\r\n    padding: 10px;\r\n    font-size: 18px;\r\n    margin-left: 10px;\r\n    border-radius: 3px; }\r\n  .login-k .submit-button:hover {\r\n    background: red; }\r\n\r\n@media screen and (max-width: 800px) {\r\n  .login-k {\r\n    margin-left: 5%;\r\n    margin-right: 5%; } }\r\n@media screen and (max-width: 620px) {\r\n  .login-k {\r\n    margin: 0px; }\r\n    .login-k .form-box {\r\n      width: 90%; } }\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/company.css":
 /*!**********************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/css/company.css ***!
@@ -220,8 +200,6 @@ exports.push([module.i, ".ind-company {\r\n  margin-left: 20%;\r\n  padding: 20p
 
 /***/ }),
 
-=======
->>>>>>> 09985de278b4a1c6822e9dcd2b93393902d9da38
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/navigation.css":
 /*!*************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/css/navigation.css ***!
@@ -272,7 +250,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "@charset 'UTF-8';\r\n/* Slider *//*\r\n.slick-loading .slick-list\r\n{\r\n    background: #fff url('./ajax-loader.gif') center center no-repeat;\r\n}\r\n\r\n/* Icons *//*\r\n@font-face\r\n{\r\n    font-family: 'slick';\r\n    font-weight: normal;\r\n    font-style: normal;\r\n\r\n    src: url('./fonts/slick.eot');\r\n    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');\r\n}\r\n/* Arrows */\r\n.slick-prev,\r\n.slick-next\r\n{\r\n    font-size: 0;\r\n    line-height: 0;\r\n\r\n    position: absolute;\r\n    top: 50%;\r\n\r\n    display: block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    padding: 0;\r\n    -webkit-transform: translate(0, -50%);\r\n    transform: translate(0, -50%);\r\n\r\n    cursor: pointer;\r\n\r\n    color: transparent;\r\n    border: none;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-prev:hover,\r\n.slick-prev:focus,\r\n.slick-next:hover,\r\n.slick-next:focus\r\n{\r\n    color: transparent;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-prev:hover:before,\r\n.slick-prev:focus:before,\r\n.slick-next:hover:before,\r\n.slick-next:focus:before\r\n{\r\n    opacity: 1;\r\n}\r\n.slick-prev.slick-disabled:before,\r\n.slick-next.slick-disabled:before\r\n{\r\n    opacity: .25;\r\n}\r\n\r\n.slick-prev:before,\r\n.slick-next:before\r\n{\r\n    font-family: 'slick';\r\n    font-size: 20px;\r\n    line-height: 1;\r\n\r\n    opacity: .75;\r\n    color: white;\r\n\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\n.slick-prev\r\n{\r\n    left: -25px;\r\n}\r\n[dir='rtl'] .slick-prev\r\n{\r\n    right: -25px;\r\n    left: auto;\r\n}\r\n.slick-prev:before\r\n{\r\n    content: '\\2190';\r\n}\r\n[dir='rtl'] .slick-prev:before\r\n{\r\n    content: '\\2192';\r\n}\r\n\r\n.slick-next\r\n{\r\n    right: -25px;\r\n}\r\n[dir='rtl'] .slick-next\r\n{\r\n    right: auto;\r\n    left: -25px;\r\n}\r\n.slick-next:before\r\n{\r\n    content: '\\2192';\r\n}\r\n[dir='rtl'] .slick-next:before\r\n{\r\n    content: '\\2190';\r\n}\r\n\r\n/* Dots */\r\n.slick-dotted.slick-slider\r\n{\r\n    margin-bottom: 30px;\r\n}\r\n\r\n.slick-dots\r\n{\r\n    position: absolute;\r\n    bottom: -25px;\r\n\r\n    display: block;\r\n\r\n    width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n\r\n    list-style: none;\r\n\r\n    text-align: center;\r\n}\r\n.slick-dots li\r\n{\r\n    position: relative;\r\n\r\n    display: inline-block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    margin: 0 5px;\r\n    padding: 0;\r\n\r\n    cursor: pointer;\r\n}\r\n.slick-dots li button\r\n{\r\n    font-size: 0;\r\n    line-height: 0;\r\n\r\n    display: block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    padding: 5px;\r\n\r\n    cursor: pointer;\r\n\r\n    color: transparent;\r\n    border: 0;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-dots li button:hover,\r\n.slick-dots li button:focus\r\n{\r\n    outline: none;\r\n}\r\n.slick-dots li button:hover:before,\r\n.slick-dots li button:focus:before\r\n{\r\n    opacity: 1;\r\n}\r\n.slick-dots li button:before\r\n{\r\n    font-family: 'slick';\r\n    font-size: 6px;\r\n    line-height: 20px;\r\n\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n\r\n    content: '\\2022';\r\n    text-align: center;\r\n\r\n    opacity: .25;\r\n    color: black;\r\n\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n}\r\n.slick-dots li.slick-active button:before\r\n{\r\n    opacity: .75;\r\n    color: black;\r\n}\r\n", ""]);
+exports.push([module.i, "@charset 'UTF-8';\n/* Slider *//*\n.slick-loading .slick-list\n{\n    background: #fff url('./ajax-loader.gif') center center no-repeat;\n}\n\n/* Icons *//*\n@font-face\n{\n    font-family: 'slick';\n    font-weight: normal;\n    font-style: normal;\n\n    src: url('./fonts/slick.eot');\n    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');\n}\n/* Arrows */\n.slick-prev,\n.slick-next\n{\n    font-size: 0;\n    line-height: 0;\n\n    position: absolute;\n    top: 50%;\n\n    display: block;\n\n    width: 20px;\n    height: 20px;\n    padding: 0;\n    -webkit-transform: translate(0, -50%);\n    transform: translate(0, -50%);\n\n    cursor: pointer;\n\n    color: transparent;\n    border: none;\n    outline: none;\n    background: transparent;\n}\n.slick-prev:hover,\n.slick-prev:focus,\n.slick-next:hover,\n.slick-next:focus\n{\n    color: transparent;\n    outline: none;\n    background: transparent;\n}\n.slick-prev:hover:before,\n.slick-prev:focus:before,\n.slick-next:hover:before,\n.slick-next:focus:before\n{\n    opacity: 1;\n}\n.slick-prev.slick-disabled:before,\n.slick-next.slick-disabled:before\n{\n    opacity: .25;\n}\n\n.slick-prev:before,\n.slick-next:before\n{\n    font-family: 'slick';\n    font-size: 20px;\n    line-height: 1;\n\n    opacity: .75;\n    color: white;\n\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\n.slick-prev\n{\n    left: -25px;\n}\n[dir='rtl'] .slick-prev\n{\n    right: -25px;\n    left: auto;\n}\n.slick-prev:before\n{\n    content: '\\2190';\n}\n[dir='rtl'] .slick-prev:before\n{\n    content: '\\2192';\n}\n\n.slick-next\n{\n    right: -25px;\n}\n[dir='rtl'] .slick-next\n{\n    right: auto;\n    left: -25px;\n}\n.slick-next:before\n{\n    content: '\\2192';\n}\n[dir='rtl'] .slick-next:before\n{\n    content: '\\2190';\n}\n\n/* Dots */\n.slick-dotted.slick-slider\n{\n    margin-bottom: 30px;\n}\n\n.slick-dots\n{\n    position: absolute;\n    bottom: -25px;\n\n    display: block;\n\n    width: 100%;\n    padding: 0;\n    margin: 0;\n\n    list-style: none;\n\n    text-align: center;\n}\n.slick-dots li\n{\n    position: relative;\n\n    display: inline-block;\n\n    width: 20px;\n    height: 20px;\n    margin: 0 5px;\n    padding: 0;\n\n    cursor: pointer;\n}\n.slick-dots li button\n{\n    font-size: 0;\n    line-height: 0;\n\n    display: block;\n\n    width: 20px;\n    height: 20px;\n    padding: 5px;\n\n    cursor: pointer;\n\n    color: transparent;\n    border: 0;\n    outline: none;\n    background: transparent;\n}\n.slick-dots li button:hover,\n.slick-dots li button:focus\n{\n    outline: none;\n}\n.slick-dots li button:hover:before,\n.slick-dots li button:focus:before\n{\n    opacity: 1;\n}\n.slick-dots li button:before\n{\n    font-family: 'slick';\n    font-size: 6px;\n    line-height: 20px;\n\n    position: absolute;\n    top: 0;\n    left: 0;\n\n    width: 20px;\n    height: 20px;\n\n    content: '\\2022';\n    text-align: center;\n\n    opacity: .25;\n    color: black;\n\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n.slick-dots li.slick-active button:before\n{\n    opacity: .75;\n    color: black;\n}\n", ""]);
 
 // exports
 
@@ -291,7 +269,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* Slider */\r\n.slick-slider\r\n{\r\n    position: relative;\r\n\r\n    display: block;\r\n    box-sizing: border-box;\r\n\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\r\n\r\n    -webkit-touch-callout: none;\r\n    -khtml-user-select: none;\r\n    touch-action: pan-y;\r\n    -webkit-tap-highlight-color: transparent;\r\n}\r\n\r\n.slick-list\r\n{\r\n    position: relative;\r\n\r\n    display: block;\r\n    overflow: hidden;\r\n\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n.slick-list:focus\r\n{\r\n    outline: none;\r\n}\r\n.slick-list.dragging\r\n{\r\n    cursor: pointer;\r\n    cursor: hand;\r\n}\r\n\r\n.slick-slider .slick-track,\r\n.slick-slider .slick-list\r\n{\r\n    -webkit-transform: translate3d(0, 0, 0);\r\n            transform: translate3d(0, 0, 0);\r\n}\r\n\r\n.slick-track\r\n{\r\n    position: relative;\r\n    top: 0;\r\n    left: 0;\r\n\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.slick-track:before,\r\n.slick-track:after\r\n{\r\n    display: table;\r\n\r\n    content: '';\r\n}\r\n.slick-track:after\r\n{\r\n    clear: both;\r\n}\r\n.slick-loading .slick-track\r\n{\r\n    visibility: hidden;\r\n}\r\n\r\n.slick-slide\r\n{\r\n    display: none;\r\n    float: left;\r\n\r\n    height: 100%;\r\n    min-height: 1px;\r\n}\r\n[dir='rtl'] .slick-slide\r\n{\r\n    float: right;\r\n}\r\n.slick-slide img\r\n{\r\n    display: block;\r\n}\r\n.slick-slide.slick-loading img\r\n{\r\n    display: none;\r\n}\r\n.slick-slide.dragging img\r\n{\r\n    pointer-events: none;\r\n}\r\n.slick-initialized .slick-slide\r\n{\r\n    display: block;\r\n}\r\n.slick-loading .slick-slide\r\n{\r\n    visibility: hidden;\r\n}\r\n.slick-vertical .slick-slide\r\n{\r\n    display: block;\r\n\r\n    height: auto;\r\n\r\n    border: 1px solid transparent;\r\n}\r\n.slick-arrow.slick-hidden {\r\n    display: none;\r\n}\r\n", ""]);
+exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
 
 // exports
 
@@ -29437,7 +29415,7 @@ function (_Component) {
             className: "ind-product",
             key: item.id
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            data: [item.img_path, "/register", item.product_name, item.product_type, item.product_detail, "kathmandu"]
+            data: [item.img_path, "/register", item.product_name, item.product_type, item.product_detail, item.location]
           }));
         }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
           style: {
@@ -29616,15 +29594,6 @@ function (_Component) {
       var err = this.validateForm();
 
       if (!err) {
-<<<<<<< HEAD
-        console.log(this.state);
-        this.setState({
-          username: "",
-          usernameerror: "",
-          password: "",
-          passwordError: ""
-        });
-=======
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "api/login?" + "_token=" + document.querySelector("meta[name='csrf-token']").content + "&email=" + this.state.username + "&password=" + this.state.password);
 
@@ -29641,7 +29610,6 @@ function (_Component) {
         };
 
         xhr.send();
->>>>>>> 09985de278b4a1c6822e9dcd2b93393902d9da38
       }
     }
   }, {
@@ -31409,19 +31377,6 @@ function (_Component) {
       var err = _this.validateForm();
 
       if (!err) {
-<<<<<<< HEAD
-        fetch('api/register', {
-          method: 'post',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: {
-            user_type: event.target.userType,
-            name: event.target.companyName,
-            contact_no: event.target.phoneNumber,
-            email: event.target.email,
-            password: event.target.password
-=======
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "api/register?" + "_token=" + document.querySelector("meta[name='csrf-token']").content + "&email=" + _this.state.email + "&name=" + _this.state.companyName + "&user_type=" + _this.state.userType + "&contact_no=" + _this.state.phoneNumber + "&password=" + _this.state.password);
 
@@ -31442,7 +31397,6 @@ function (_Component) {
               confirmPassword: "",
               confirmPasswordError: ""
             });
->>>>>>> 09985de278b4a1c6822e9dcd2b93393902d9da38
           }
         };
 
@@ -32149,37 +32103,6 @@ if(false) {}
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ "./resources/js/css/RegisterPage.css":
-/*!*******************************************!*\
-  !*** ./resources/js/css/RegisterPage.css ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!./RegisterPage.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/RegisterPage.css");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
 /***/ "./resources/js/css/company.css":
 /*!**************************************!*\
   !*** ./resources/js/css/company.css ***!
@@ -32210,8 +32133,6 @@ if(false) {}
 
 /***/ }),
 
-=======
->>>>>>> 09985de278b4a1c6822e9dcd2b93393902d9da38
 /***/ "./resources/js/css/navigation.css":
 /*!*****************************************!*\
   !*** ./resources/js/css/navigation.css ***!
@@ -32442,8 +32363,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_MainPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/MainPage */ "./resources/js/components/MainPage.js");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Footer */ "./resources/js/components/Footer.js");
 /* harmony import */ var _components_Login_Login__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Login/Login */ "./resources/js/components/Login/Login.js");
-<<<<<<< HEAD
-/* harmony import */ var _components_RegisterPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/RegisterPage */ "./resources/js/components/RegisterPage.js");
+/* harmony import */ var _components_RegisterPage_RegisterPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/RegisterPage/RegisterPage */ "./resources/js/components/RegisterPage/RegisterPage.js");
 /* harmony import */ var _components_Company__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Company */ "./resources/js/components/Company.js");
 /* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./css/slick.css */ "./resources/js/css/slick.css");
 /* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_css_slick_css__WEBPACK_IMPORTED_MODULE_11__);
@@ -32453,17 +32373,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./css/style.css */ "./resources/js/css/style.css");
 /* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_14__);
-=======
-/* harmony import */ var _components_RegisterPage_RegisterPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/RegisterPage/RegisterPage */ "./resources/js/components/RegisterPage/RegisterPage.js");
-/* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./css/slick.css */ "./resources/js/css/slick.css");
-/* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_css_slick_css__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _css_slick_theme_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./css/slick-theme.css */ "./resources/js/css/slick-theme.css");
-/* harmony import */ var _css_slick_theme_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_css_slick_theme_css__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./css/nouislider.min.css */ "./resources/js/css/nouislider.min.css");
-/* harmony import */ var _css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./css/style.css */ "./resources/js/css/style.css");
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_13__);
->>>>>>> 09985de278b4a1c6822e9dcd2b93393902d9da38
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32489,10 +32398,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 09985de278b4a1c6822e9dcd2b93393902d9da38
 
 
 
@@ -32521,11 +32427,7 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/register",
-<<<<<<< HEAD
-        component: _components_RegisterPage__WEBPACK_IMPORTED_MODULE_9__["default"]
-=======
         component: _components_RegisterPage_RegisterPage__WEBPACK_IMPORTED_MODULE_9__["default"]
->>>>>>> 09985de278b4a1c6822e9dcd2b93393902d9da38
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/",
         component: _components_Home__WEBPACK_IMPORTED_MODULE_2__["default"],
@@ -32674,8 +32576,8 @@ function unregister() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\xamp\htdocs\sabaixa\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! F:\xamp\htdocs\sabaixa\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\locusbnk\sabaixa\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\locusbnk\sabaixa\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

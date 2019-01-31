@@ -13,21 +13,9 @@ use Illuminate\Http\Request;
 |
 */
 
-<<<<<<< HEAD
-//Route::middleware('auth:api')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-Route::group(['middleware' => ['web']], function () {
-    // your routes here
-
-=======
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
->>>>>>> 09985de278b4a1c6822e9dcd2b93393902d9da38
 Auth::routes();
 Route::group(['middleware' => ['web']], function () {
     Route::post('/login','Auth\LoginController@login');
@@ -63,4 +51,3 @@ Route::get('/review/{id}', 'ReviewController@index');
 Route::get('/review/showReview', 'ReviewController@showReview');
 Route::post('/review/createReview', 'ReviewController@createReview')->name('review.createreview');
 Route::post('/review/deleteReview', 'ReviewController@deleteReview')->name('user.deletereview');
-});

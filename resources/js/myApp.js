@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import MainPage from "./components/MainPage";
 import Footer from "./components/Footer";
 import Login from "./components/Login/Login";
-import RegisterPage from "./components/RegisterPage";
+import RegisterPage from "./components/RegisterPage/RegisterPage";
 
 import Company from "./components/Company";
 
