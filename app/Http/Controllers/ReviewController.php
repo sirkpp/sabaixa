@@ -80,6 +80,6 @@ class ReviewController extends Controller
     }
     public function produtReview()
     {
-        return Auth::user()->ureview;                                 
+        return Auth::user()->uproduct;                                 
     }
 }
