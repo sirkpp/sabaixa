@@ -16,6 +16,6 @@ class ReviewTableSeeder extends Seeder
         factory(App\Review::class, 50)->create();
         $review=Review::find(1);
         $product=Product::find(1);
-        $product->review()->attach($review);
+        $product->preview()->attach($review);
     }
 }

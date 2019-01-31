@@ -11,6 +11,6 @@ class Product extends Model
     ];
 
     public function preview(){
-        return $this->hasMany('App\Review');
+        return $this->belongsToMany('App\Review');
     }
 }
