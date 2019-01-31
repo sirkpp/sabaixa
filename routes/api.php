@@ -24,8 +24,7 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/user/{id}', 'ProfileController@showCompany');
-Route::get('/user/count/{count}', 'ProfileController@showCompanies');
+Route::get('/user/{id}', 'ProfileController@index');
 //Route::get('/user/{id}', 'ProfileController@index');
 Route::post('/user/editName', 'ProfileController@editName')->name('user.editName');
 Route::post('/user/editProfilePic', 'ProfileController@editProfilePic')->name('user.editProfilePic');
@@ -34,6 +33,10 @@ Route::post('/user/editMainProduct', 'ProfileController@editMainProduct')->name(
 Route::post('/user/editExperience', 'ProfileController@editExperience')->name('user.editExperience');
 Route::post('/user/editTotalRevenue', 'ProfileController@editTotalRevenue')->name('user.editTotalRevenue');
 Route::post('/user/editTopMarket', 'ProfileController@editTopMarket')->name('user.editTopMarket');
+
+Route::get('/company/{id}', 'CompanyController@showCompany');
+Route::get('/company/count/{count}', 'CompanyController@showCompanies');
+
 
 
 Route::get('/post/{id}', 'PostController@index');

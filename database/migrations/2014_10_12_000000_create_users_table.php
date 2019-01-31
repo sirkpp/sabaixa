@@ -28,6 +28,7 @@ class CreateUsersTable extends Migration
             $table->string('top_market')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->timestamp('last_active_at');
             $table->rememberToken();
             $table->timestamps();
         });
