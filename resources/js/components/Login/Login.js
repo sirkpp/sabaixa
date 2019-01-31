@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Login.css";
+import {BrowserRouter as Router, Route, Link, Redirect} from "react-router-dom";
+import ForgotPassword from "./ForgotPassword"
 
 const maintainmargin = {
   margin: "30px"
@@ -9,10 +11,12 @@ export default class Login extends Component {
   constructor() {
     super();
     this.state = {
-      username: "",
-      usernameerror: "",
+      email: "",
+      emailerror: "",
       password: "",
-      passworderror: ""
+      passworderror: "",
+      isAuthenticated:false,
+      loggedin:false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -25,15 +29,20 @@ export default class Login extends Component {
     });
   }
 
+  validateEmail = email => {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  };
+
   validateForm = () => {
     let isError = false;
     const errors = {};
 
-    if (this.state.username.length < 1) {
+    if (!this.validateEmail(this.state.email)) {
       isError = true;
-      errors.usernameerror = "enter valid username";
+      errors.emailerror = "enter valid email";
     } else {
-      errors.usernameerror = "";
+      errors.emailerror = "";
     }
 
     if (this.state.password.length < 8) {
@@ -57,32 +66,45 @@ export default class Login extends Component {
     event.preventDefault();
     console.log(event.target);
     const err = this.validateForm();
+    const that = this;
     if (!err) {
       var xhr=new XMLHttpRequest();
-      xhr.open("POST","api/login?"+"_token="+document.querySelector("meta[name='csrf-token']").content+"&email="+this.state.username+"&password="+this.state.password);
+      xhr.open("POST","api/login?"+"_token="+document.querySelector("meta[name='csrf-token']").content+"&email="+this.state.email+"&password="+this.state.password);
       xhr.onreadystatechange=function(){
           if(xhr.readyState===4){
-            
-            console.log(xhr.response);
-            this.setState({
-              username: "",
-              usernameerror: "",
-              password: "",
-              passwordError: ""
-            });
+            if(xhr.status == 200 || xhr.status == 302 ){
+              console.log(xhr.response)
+              console.log(that.state);
+              that.setState({
+                email: "",
+                emailerror: "",
+                password: "",
+                passwordError: "",
+                isAuthenticated:true,
+                loggedin:true
+              });
+              console.log("!!!Logged In !!!",that.state.isAuthenticated)
+            }
+            else if(xhr.state==404){
+              
+            }
+            else{
+              "server error";
+            }
           }
       }
       xhr.send();
-
     }
   }
 
-  ComponentDidMount() {
-    this.setState({ notamember: false });
-  }
-
   render() {
+    if(this.state.isAuthenticated){
+      return(
+        <Redirect to="/"/>
+        );
+    }
     return (
+      <Router>
       <div className="wrapper fadeInDown">
         <div id="formContent" style={maintainmargin}>
           <div className="fadeIn first profile-userpic">
@@ -93,12 +115,12 @@ export default class Login extends Component {
               type="text"
               id="login"
               className="fadeIn second"
-              name="username"
-              placeholder="username"
-              value={this.state.username}
+              name="email"
+              placeholder="email"
+              value={this.state.email}
               onChange={this.handleChange}
             />
-            <div className="error-message"> {this.state.usernameerror}</div>
+            <div className="error-message"> {this.state.emailerror}</div>
             <input
               type="password"
               id="password"
@@ -111,14 +133,22 @@ export default class Login extends Component {
             <div className="error-message"> {this.state.passworderror}</div>
             <button
               className="submit-button fadeIn fourth"
-              onClick={e => this.handleSubmit(e)}
+              onClick={this.handleSubmit}
             >
               Login
             </button>
           </form>
+
+          {/* <!-- Remind Passowrd --> */}
+          <div id="formFooter">
+              <Link className="underlineHover" to="/forgotpassword">Forgot Passowrd?</Link>
+              <Route path="/forgotpassword" component={ForgotPassword}/>
         </div>
       </div>
+      </div>
+      </Router>
     );
   }
 }
+
 
