@@ -83,13 +83,14 @@ export default class Login extends Component {
                 isAuthenticated:true,
                 loggedin:true
               });
-              console.log("!!!Logged In !!!",that.state.isAuthenticated)
+              console.log("!!! Logged In !!!",that.state.isAuthenticated)
             }
-            else if(xhr.state==404){
-              
+            else if(xhr.status==404){
+              alert("Email or password didn't match. Please, try again");
+              // that.setState({nomatcherror:"Email or password didn't match. Please, try again"})
             }
             else{
-              "server error";
+              alert("Sorry! The server didn't respond. Please, try again");
             }
           }
       }
@@ -150,5 +151,4 @@ export default class Login extends Component {
     );
   }
 }
-
 
