@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import Product from "./Product";
+import Products from "./Products";
 import Companies from "./Companies";
 import "./../css/Home.css"
 
@@ -10,11 +10,7 @@ import "./../css/Home.css"
  class Home extends Component {
 
     render = () => {
-        var {isLoaded,product}=this.state;
-        if(!isLoaded){
-            return (<div>loading......</div>);
-        }
-        else{
+        
         return (
             <div className="whole-home">
                 <Navigation />
@@ -70,39 +66,17 @@ import "./../css/Home.css"
                 </div>
 
                 <div className="products">
-                    <h1 style={{ width: "100%", padding: "30px 0px", textAlign: "center" }}>Products</h1>
-                    
-                    {
-                        <div className="products">
-                            {product.map(item=>(
-                                <div className="ind-product" key={item.id}>
-                                    <Product id={item.id}/>
-                                </div>
-                            ))}
-                        </div>
-                    }
-                    
-                </div>
                 <div className="products">
-                    <h1 style={{ width: "100%", padding: "30px 0px", textAlign: "center" }}>Products</h1>
-                    
-                    {
-                        <div className="products">
-                            {product.map(item=>(
-                                <div className="ind-product" key={item.id}>
-                                    <Product data={[item.img_path, "/register", item.product_name, item.product_type, item.product_detail, item.location]}/>
-                                </div>
-                            ))}
-                        </div>
-                    }
+                <Products count="3" />   
+                </div>
                     
                 </div>
-                <h1 style={{ width: "100%", padding: "30px 0px", textAlign: "center" }}>Companies</h1>
+                
                 <Companies count="3" />
                 <Footer />
 
             </div>
-        );}
+        );
     }
 }
 export default Home;

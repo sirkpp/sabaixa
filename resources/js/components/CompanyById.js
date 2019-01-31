@@ -13,9 +13,8 @@ export default class Company extends Component {
     }
 
     componentDidMount() {
-        fetch('/api/company/' + this.props.id)
+        fetch('/api/company/' + this.props.info[0])
             .then(response => {
-                console.log(response.json());
                 return (response.json());
             })
             .then(json => {
@@ -46,22 +45,23 @@ export default class Company extends Component {
                     <div className="company-header">
                         <h3><span> Experience : {company.experience} years </span>    {company.name}</h3>
                     </div>
+                    
                     <div className="body-content">
-
+{/*
                         <div className="products">
 
                             {
                                 <div className="product">
-                                    {company.products.map(id => (
-                                        <div className="ind-product" key={id}>
-                                            <Product data={id} />
+                                    {company.map(item => (
+                                        <div className="ind-product" key={item.id}>
+                                            <Product data={item.id} />
                                         </div>
                                     ))}
                                 </div>
                             }
 
                         </div>
-
+*/}
                         <div className="details">
                             <ul>
                                 <li>

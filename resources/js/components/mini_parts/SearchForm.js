@@ -1,8 +1,8 @@
 import React from 'react';
 
 const SearchForm=(props)=>(
-  <form style={{display:"flex", alignItems:"center",flexWrap:"wrap",justifyContent:"center"}} onSubmit={props.getItem}>
-    <select className="search-box select-k" >
+  <form style={{display:"flex", alignItems:"center",flexWrap:"wrap",justifyContent:"center"}} onSubmit={props.getfunc[0]}>
+    <select onChange={props.getfunc[1]} className="search-box select-k" >
       <option value="all">All</option>
       <option value="product">Product</option>
       <option value="producer">Producer</option>

@@ -5,10 +5,30 @@ import "./../css/Header.css";
 
 export default class Header extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            categories:"",
+            search_item:""
+        }
+    }
+
+
     getItem = (e) => {
-        const productName = e.target.elements.productName.value;
+        bar=e.target.elements.productName.value;
         e.preventDefault();//prevents from refrehing
-        console.log(productName);
+        this.setState({
+            search_item : e.target.elements.productName.value,
+        });
+        console.log(this.state,bar);
+    }
+
+    _submitHandleChange = (e) => {
+        e.preventDefault();
+        let { name, value } = e.target;
+        this.setState({
+          categories: value,
+        });
     }
 
 
@@ -59,7 +79,7 @@ export default class Header extends Component {
                                     </li>
 
                                     <li className="actual-form" >
-                                        <SearchForm getItem={this.getItem} />
+                                        <SearchForm getfunc={[this.getItem,this._submitHandleChange]} />
                                     </li>
                                 </ul>
                                 

@@ -56,13 +56,35 @@ class ProductController extends Controller
     public function productList($count)
     {
         $products = Product::all();
-        //$data = array();
-        $len = $product.length;
+        $data = array();
+        if($products != NULL)
+        {
+            foreach($products as $product)
+            {
+            $item = array(
+                "id"=>$product['id'],
+                "product_name"=>$product['product_name'],
+                "product_type"=>$product['product_type'],
+                "min_quantity"=>$product['min_quantity'],
+                "price_per_min_quantity"=>$product['price_per_min_quantity'],
+                "location"=>$product['location'],
+                "seller"=>$product['seller'],
+                "producdelivery_by_sellert_type"=>$product['delivery_by_seller'],
+                "product_detail"=>$product['product_detail'],
+                "img_path"=>$product['img_path'],
+                "created_at"=>$product['created_at'],
+                "updated_at"=>$product['updated_at'],
+            );
+            array_push($data,$item);
+        }
+        $len = count($data);
+
         if($len<$count)
         {
-            return $product;
+            return $data;
+        }
         }else{
-            return array_chunk($products,$count);
+            return array_chunk($data,$count);
         }
         
         return $data;

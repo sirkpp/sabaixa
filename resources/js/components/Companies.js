@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Company from "./Company";
+import CompanyById from "./CompanyById";
 import "./../css/company.css";
 
 export default class Companies extends Component {
@@ -14,7 +14,7 @@ export default class Companies extends Component {
     }
 
     componentDidMount() {
-        fetch('/api/user/count/'+ this.props.id)
+        fetch('/api/company/count/'+ this.props.count)
             .then(response => {
                 return (response.json());
             })
@@ -52,7 +52,7 @@ export default class Companies extends Component {
                         <div className="companies">
                             {companies.map(item=>(
                                 <div className="company" key={item.id}>
-                                    <Company info={[item.id,3]}/>
+                                    <CompanyById info={item.id}/>
                                 </div>
                             ))}
                         </div>
