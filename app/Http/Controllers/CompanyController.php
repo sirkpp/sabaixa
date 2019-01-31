@@ -7,46 +7,33 @@ use App\Http\Controllers\Controller;
 use App\User;
 use App\Product;
 
+
 class CompanyController extends Controller
-{
-    public function giveProduct($userID,$count=3){
-        $user=User::find($userID);
-        $products = $user->product();
-        $data = array();
-        if($products != NULL)
-        {
-            foreach($products as $product)
-            {
-            $item = array(
-                "id"=>$product['id'],
-                "product_name"=>$product['product_name'],
-                "product_type"=>$product['product_type'],
-                "min_quantity"=>$product['min_quantity'],
-                "price_per_min_quantity"=>$product['price_per_min_quantity'],
-                "location"=>$product['location'],
-                "seller"=>$product['seller'],
-                "producdelivery_by_sellert_type"=>$product['delivery_by_seller'],
-                "product_detail"=>$product['product_detail'],
-                "img_path"=>$product['img_path'],
-                "created_at"=>$product['created_at'],
-                "updated_at"=>$product['updated_at'],
-            );
-            array_push($data,$item);
+{ 
+    
+    public function giveProduct($user_id, $count){
+        $products = (User::find($user_id)->product);
+        $datas = json_decode($products);
+        $len = count($datas);
+        $myarr = array();
+        foreach($datas as $data){
+           $item = $data->id;
+           array_push($myarr,$item);
         }
-    }
-        $len = count($data);
+        return $myarr;
         if($len<$count)
         {
-            return $data;
+            return $myarr;
         }
         else{
-            return array_chunk($data,$count);
-        }
-
+            return array_slice($myarr,$len - $count);
+        } 
     }
     public function showCompany($user_id){
         $users=User::findorFail($user_id);
+        return $users;
         $data = array();
+
         if($users !=NULL){
             $data['id']=$users['id'];
             $data['name']=$users['name'];
@@ -55,33 +42,37 @@ class CompanyController extends Controller
             $data['location']=$users['location'];          
             $data['total_revenue']=$users['total_revenue'];
             $data['top_market']=$users['top_market'];
-            $data['product']=$this->giveProduct($users['id'],3);
+            $data['product']=$this->giveProduct($user_id,3);
             return $data;
 
         }
     }
     public function showCompanies($count){
-        $users=User::all();
-        
+        $users=json_decode(User::all());
+        $len = count($users);
         $data = array();
         foreach($users as $user){
+            $user_id=$user->id;
             $item = array(
-                    'id'=>$user['id'],
-                    'name'=>$user['name'],
-                    'main_product'=>$user['main_product'],
-                    'experience'=>$user['experience'],
-                    'location'=>$user['location'],         
-                    'total_revenue'=>$user['total_revenue'],
-                    'top_market'=>$user['top_market'],
-                    'product'=>$this->giveProduct($user['id'],$count),
+                    'id'=>$user->id,
+                    'name'=>$user->name,
+                    'main_product'=>$user->main_product,
+                    'experience'=>$user->experience,
+                    'location'=>$user->location,         
+                    'total_revenue'=>$user->total_revenue,
+                    'top_market'=>$user->top_market,
+                    'product'=>$this->giveProduct($user_id,3),
             );
             array_push($data,$item);
-            $len = count($data);
 
-        if($len<$count){
-            
-            }
-            return $data;
         }
+        if($len<$count){
+           
+            return $data;
+        }else
+        {
+            return array_slice($data,$len-$count);
+        }
+
     }
 }

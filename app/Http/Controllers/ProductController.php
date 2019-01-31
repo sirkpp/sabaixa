@@ -55,6 +55,8 @@ class ProductController extends Controller
     }
     public function productList($count)
     {
+        //yei chaeya haina?
+
         $products = Product::all();
         $data = array();
         if($products != NULL)
@@ -76,18 +78,19 @@ class ProductController extends Controller
                 "updated_at"=>$product['updated_at'],
             );
             array_push($data,$item);
+            }
         }
         $len = count($data);
-
-        if($len<$count)
+        $countint=(int)$count;
+        if($len<=$countint)
         {
             return $data;
         }
-        }else{
-            return array_chunk($data,$count);
+        else{
+           
+            return array_slice($data,0,$countint);
         }
-        
-        return $data;
+
     }
     public function createProduct(Request $request)
     {

@@ -12,19 +12,6 @@ export default class Company extends Component {
         }
     }
 
-    componentDidMount() {
-        fetch('/api/company/' + this.props.info[0])
-            .then(response => {
-                return (response.json());
-            })
-            .then(json => {
-                //Fetched product is stored in the state
-                this.setState({
-                    isLoaded: true,
-                    company: json,
-                });
-            });
-    }
 
 
 
@@ -32,13 +19,8 @@ export default class Company extends Component {
 
 
     render = () => {
-        var { isLoaded, company } = this.state;
-        if (!isLoaded) {
-            return (
-                <h1>Loading........</h1>
-            )
-        }
-        else {
+        var company = this.props.data;
+        
 
             return (
                 <div className="ind-company">
@@ -47,21 +29,21 @@ export default class Company extends Component {
                     </div>
                     
                     <div className="body-content">
-{/*
+
                         <div className="products">
 
                             {
                                 <div className="product">
-                                    {company.map(item => (
-                                        <div className="ind-product" key={item.id}>
-                                            <Product data={item.id} />
+                                    {company.product.map(item => (
+                                        <div className="ind-product" key={item}>
+                                            <Product info={item} />
                                         </div>
                                     ))}
                                 </div>
                             }
 
                         </div>
-*/}
+
                         <div className="details">
                             <ul>
                                 <li>
@@ -76,9 +58,7 @@ export default class Company extends Component {
                                 <li>
                                     <span className="title-k">Top Markets </span> : {company.top_markets}
                                 </li>
-                                <li>
-                                    <span className="title-k">Response Rate </span> : {company.service_rating}
-                                </li>
+                            
                             </ul>
                         </div>
                     </div>
@@ -90,6 +70,6 @@ export default class Company extends Component {
                     </div>
                 </div>
             );
-        }
+        
     }
 }

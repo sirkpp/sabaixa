@@ -67,12 +67,12 @@ import "./../css/Home.css"
 
                 <div className="products">
                 <div className="products">
-                <Products count="3" />   
+                <Products count="10" />   
                 </div>
                     
                 </div>
                 
-                <Companies count="3" />
+                <Companies count="10" />
                 <Footer />
 
             </div>

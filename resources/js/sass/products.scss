@@ -1,0 +1,34 @@
+.products{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .ind-product{
+      width:20%;
+      padding:5px;
+    }
+}
+
+
+  @media screen and(max-width:990px) {
+    
+    .products{
+      .ind-product{
+        width:30%;
+      }
+    }
+  }
+  
+  
+  @media screen and(max-width:700px){
+    
+    
+    .products{
+      .ind-product{
+        width:40%;
+      }
+    }
+    }
+  
+  

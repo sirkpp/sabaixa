@@ -15,7 +15,6 @@ export default class Company extends Component {
     componentDidMount() {
         fetch('/api/company/' + this.props.id)
             .then(response => {
-                console.log(response.json());
                 return (response.json());
             })
             .then(json => {
@@ -34,6 +33,7 @@ export default class Company extends Component {
 
     render = () => {
         var { isLoaded, company } = this.state;
+        console.log(company);
         if (!isLoaded) {
             return (
                 <h1>Loading........</h1>

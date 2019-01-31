@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CompanyById from "./CompanyById";
+import CompanyByData from "./CompanyByData";
 import "./../css/company.css";
 
 export default class Companies extends Component {
@@ -52,7 +52,7 @@ export default class Companies extends Component {
                         <div className="companies">
                             {companies.map(item=>(
                                 <div className="company" key={item.id}>
-                                    <CompanyById info={item.id}/>
+                            <CompanyByData data={item}/>
                                 </div>
                             ))}
                         </div>

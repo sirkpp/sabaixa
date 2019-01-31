@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Redirect } from "react-router-dom";
 import SearchForm from "./mini_parts/SearchForm";
 import "./../css/Header.css";
 
@@ -9,19 +9,32 @@ export default class Header extends Component {
         super(props);
         this.state = {
             categories:"",
-            search_item:""
+            search_item:"",
         }
     }
 
 
-    getItem = (e) => {
-        bar=e.target.elements.productName.value;
+    getItem = async(e) => {
         e.preventDefault();//prevents from refrehing
+        var bar=e.target.elements.productName.value;
         this.setState({
-            search_item : e.target.elements.productName.value,
+            search_item : await (bar)
         });
-        console.log(this.state,bar);
+        console.log(this.state, bar);
+        
+        console.log(this.props);
+
+        <Redirect to={{
+            pathname:"/login",
+            state:this.state
+        }}/>
+        
+        console.log(this.state);
+
+
     }
+
+
 
     _submitHandleChange = (e) => {
         e.preventDefault();
@@ -35,9 +48,9 @@ export default class Header extends Component {
 
     render = () => {
         return (
+            
             <div className="header-box-k">
                 <header>
-
                     <div id="top-header" className="top-header-k">
                         <div className="container">
                             <div className="pull-left">

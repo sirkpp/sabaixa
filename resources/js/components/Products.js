@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Product from "./Product";
 import "./../css/Product.css";
+import "./../css/products.css"
 
 export default class Products extends Component {
 
@@ -47,13 +48,13 @@ export default class Products extends Component {
             
             <div>
                 <div className="Products">
-                    <h1 style={{ width: "100%", padding: "30px 0px", textAlign: "center" }}>Companies</h1>
+                    <h1 style={{ width: "100%", padding: "30px 0px", textAlign: "center" }}>Products</h1>
    
                     {
                         
                         <div className="products">
                             {products.map(item=>(
-                                <div className="product" key={item.id}>
+                                <div className="ind-product" key={item.id}>
                                 {console.log(item.id)}
                                     <Product info={item.id}/>
                                 </div>
