@@ -13,6 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
+<<<<<<< HEAD
 //Route::middleware('auth:api')->get('/user', function (Request $request) {
 //    return $request->user();
 //});
@@ -22,19 +23,19 @@ use Illuminate\Http\Request;
 Route::group(['middleware' => ['web']], function () {
     // your routes here
 
+=======
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});
+>>>>>>> 09985de278b4a1c6822e9dcd2b93393902d9da38
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-Route::get('/home', 'HomeController@index')->name('home');
-
+Route::group(['middleware' => ['web']], function () {
+    Route::post('/login','Auth\LoginController@login');
+});
 
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-//Route::get('/user', 'ProfileController@')
 Route::get('/user/{id}', 'ProfileController@index');
 Route::post('/user/editName', 'ProfileController@editName')->name('user.editName');
 Route::post('/user/editProfilePic', 'ProfileController@editProfilePic')->name('user.editProfilePic');
