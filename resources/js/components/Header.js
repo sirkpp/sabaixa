@@ -76,19 +76,12 @@ export default class Header extends Component {
                                         </div>
                                         <NavLink to='/login' className="text-uppercase">Login</NavLink> / <NavLink to='/register' className="text-uppercase">Join</NavLink>
                                         <ul className="custom-menu">
-                                            <li><NavLink to='#' ><i className="fa fa-user-o"></i> My Account</NavLink></li>
+                                            <li><NavLink to='/profile' ><i className="fa fa-user-o"></i> My Account</NavLink></li>
                                             <li><NavLink to='#' ><i className="fa fa-heart-o"></i> My Wishlist</NavLink></li>
-                                            <li><NavLink to='#' ><i className="fa fa-exchange"></i> Compare</NavLink></li>
-                                            <li><NavLink to='#' ><i className="fa fa-check"></i> Checkout</NavLink></li>
                                             <li><NavLink to='/login' ><i className="fa fa-unlock-alt"></i> Login</NavLink></li>
-                                            <li><NavLink to='#' ><i className="fa fa-user-plus"></i> Create An Account</NavLink></li>
+                                            <li><NavLink to='/register' ><i className="fa fa-user-plus"></i> Create An Account</NavLink></li>
                                         </ul>
                                     </li>
-
-
-
-                                    
-
                                 </ul>
                             </div>
                         </div>
