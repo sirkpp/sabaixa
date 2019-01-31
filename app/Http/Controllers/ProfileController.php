@@ -66,6 +66,108 @@ class ProfileController extends Controller
             $user->save();
         }
     }
+    public function editMainProduct(Request $request)
+    {
+        
+        if(validator::make(array("main_product"=>$request['main_product']),[
+            'main_product' => ['required', 'string'],
+        ]))
+        {
+            $user = User::find($request);
+            $user->main_product = $request['main_product'];
+            $user->save();
+        }
+    }
+    public function editExperience(Request $request)
+    {
+        
+        if(validator::make(array("experience"=>$request['experience']),[
+            'experience' => ['required', 'bigInteger'],
+        ]))
+        {
+            $user = User::find($request);
+            $user->experience = $request['experience'];
+            $user->save();
+        }
+    }
+    public function editTotalRevenue(Request $request)
+    {
+        
+        if(validator::make(array("total_revenue"=>$request['total_revenue']),[
+            'total_revenue' => ['required', 'bigInteger'],
+        ]))
+        {
+            $user = User::find($request);
+            $user->total_revenue = $request['total_revenue'];
+            $user->save();
+        }
+    }
+    public function editTopMarket(Request $request)
+    {
+        
+        if(validator::make(array("top_market"=>$request['top_market']),[
+            'top_market' => ['required', 'string'],
+        ]))
+        {
+            $user = User::find($request);
+            $user->top_market = $request['top_market'];
+            $user->save();
+        }
+    }
+    
+    public function giveProduct($userID,$count=3){
+        $user=User::find($userID);
+        $products = $user->product();
+        $len = $product.length;
+        if($len<$count)
+        {
+            return $products;
+        }
+        else{
+            return array_chunk($products,$count);
+        }
+
+    }
+    public function showCompany($user_id){
+        $users=User::findorFail($user_id);
+        $data = array();
+        if($users !=NULL){
+            $data['id']=$users['id'];
+            $data['name']=$users['name'];
+            $data['main_product']=$users['main_product'];
+            $data['experience']=$users['experience'];
+            $data['location']=$users['location'];          
+            $data['total_revenue']=$users['total_revenue'];
+            $data['top_market']=$users['top_market'];
+            $data['product']=$this->giveProduct($users['id'],3);
+            return $data;
+
+        }
+    }
+    public function showCompanies($count){
+        $users=User::all();
+        $len = $users.length;
+        $data = array();
+
+        if($len<$count){
+            foreach($users as $user){
+                $item = array(
+                        'id'=>$user['id'],
+                        'name'=>$user['name'],
+                        'main_product'=>$user['main_product'],
+                        'experience'=>$user['experience'],
+                        'location'=>$user['location'],         
+                        'total_revenue'=>$user['total_revenue'],
+                        'top_market'=>$user['top_market'],
+                        'product'=>$this->giveProduct($user['id'],3),
+                );
+                array_push($data,$item);
+            }
+            return $data;
+        }
+    }
+
+    
 }
 /*
 user ko detail save garne 

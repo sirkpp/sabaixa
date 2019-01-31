@@ -3,35 +3,11 @@ import Header from "./Header";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Product from "./Product";
-import Company from "./Company";
+import Companies from "./Companies";
 import "./../css/Home.css"
 
 
  class Home extends Component {
-
-    constructor(){
-        super();
-        this.state={
-            product:[],
-            isLoaded:false,
-
-        }
-    }
-
-    componentDidMount(){
-        fetch('/api/product')
-        .then(response => {
-            return(response.json());
-        })
-        .then( json => {
-            //Fetched product is stored in the state
-            this.setState({
-                isLoaded:true,
-                product:json,
-             });
-        });
-      }
-
 
     render = () => {
         var {isLoaded,product}=this.state;
@@ -100,14 +76,29 @@ import "./../css/Home.css"
                         <div className="products">
                             {product.map(item=>(
                                 <div className="ind-product" key={item.id}>
-                                    <Product data={[item.img_path, "/register", item.product_name, item.product_type, item.product_detail, "kathmandu"]}/>
+                                    <Product id={item.id}/>
                                 </div>
                             ))}
                         </div>
                     }
                     
                 </div>
-                <Company />
+                <div className="products">
+                    <h1 style={{ width: "100%", padding: "30px 0px", textAlign: "center" }}>Products</h1>
+                    
+                    {
+                        <div className="products">
+                            {product.map(item=>(
+                                <div className="ind-product" key={item.id}>
+                                    <Product data={[item.img_path, "/register", item.product_name, item.product_type, item.product_detail, item.location]}/>
+                                </div>
+                            ))}
+                        </div>
+                    }
+                    
+                </div>
+                <h1 style={{ width: "100%", padding: "30px 0px", textAlign: "center" }}>Companies</h1>
+                <Companies count="3" />
                 <Footer />
 
             </div>

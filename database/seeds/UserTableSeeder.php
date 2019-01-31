@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\User;
+use App\Review;
 class UserTableSeeder extends Seeder
 {
     /**
@@ -11,16 +12,9 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        $kpp=new User();
-        $kpp['id']=1;
-        $kpp['first_name']="Krishnaaa";
-        $kpp['last_name']="Panthiii";
-        $kpp['email']="kpp@kpp.com";
-        $kpp['gender']="Male";
-        $kpp['user_type']="God";
-        $kpp['profile_pic']="Male";
-        $kpp['contact_no']=981;
-        $kpp['password']="abcdefghh";
-        $kpp->Save();
+        factory(App\User::class, 50)->create();
+        $review= Review::find(1);
+        $user= User::find(1);
+        $user->ureview()->attach($review);
     }
 }

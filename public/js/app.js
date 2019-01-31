@@ -174,7 +174,26 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".product-view {\r\n  width: 30%;\r\n  border: 1px solid black; }\r\n  .product-view .product-info {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background: black;\r\n    border: 1px solid orangered; }\r\n    .product-view .product-info .product-data {\r\n      list-style-type: none;\r\n      font-size: 14px;\r\n      color: orangered;\r\n      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }\r\n      .product-view .product-info .product-data .product-name {\r\n        font-size: 14px;\r\n        text-align: center;\r\n        font-weight: 600; }\r\n", ""]);
+exports.push([module.i, ".product-view {\r\n  width: 30%;\r\n  min-height: 250px;\r\n  background: white; }\r\n  .product-view .product-info {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    align-items: center;\r\n    justify-content: center;\r\n    background: white; }\r\n    .product-view .product-info .product-data {\r\n      text-align: center;\r\n      list-style-type: none;\r\n      font-size: 14px;\r\n      color: black;\r\n      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }\r\n      .product-view .product-info .product-data .product-name {\r\n        font-size: 18px;\r\n        text-align: center;\r\n        font-weight: 600; }\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/company.css":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/css/company.css ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".ind-company {\r\n  margin-left: 20%;\r\n  padding: 20px 0px;\r\n  margin-top: 20px;\r\n  background: white; }\r\n  .ind-company .company-header {\r\n    width: 100%;\r\n    padding: 10px;\r\n    color: black; }\r\n  .ind-company .company-header::after {\r\n    content: '';\r\n    display: block;\r\n    background: black;\r\n    height: 1px; }\r\n  .ind-company .body-content {\r\n    display: flex;\r\n    flex-wrap: wrap; }\r\n  .ind-company .products {\r\n    width: 50%;\r\n    min-width: 350px;\r\n    display: flex; }\r\n    .ind-company .products .product {\r\n      width: 100%;\r\n      display: flex; }\r\n      .ind-company .products .product .ind-product {\r\n        width: 30%; }\r\n  .ind-company .details {\r\n    width: 50%;\r\n    min-width: 300px;\r\n    display: block;\r\n    color: black;\r\n    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;\r\n    font-size: 16px; }\r\n    .ind-company .details .title-k {\r\n      font-size: 18px;\r\n      font-weight: 600; }\r\n  .ind-company button {\r\n    color: white;\r\n    background: orangered;\r\n    border: none;\r\n    margin: 0px 50px;\r\n    padding: 5px 13px;\r\n    font-size: 16px; }\r\n\r\n.ind-company:hover {\r\n  box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.6); }\r\n\r\n@media screen and (max-width: 900px) {\r\n  .ind-company {\r\n    margin: 0px; } }\r\n@media screen and (max-width: 750px) {\r\n  .ind-company .products, .ind-company .details {\r\n    width: 80%;\r\n    margin-left: 10%;\r\n    min-width: 320px; } }\r\n@media screen and (max-width: 600px) {\r\n  .ind-company .products, .ind-company .details {\r\n    margin: 0px;\r\n    width: 100%; }\r\n  .ind-company button {\r\n    margin: 0px 20px; } }\r\n", ""]);
 
 // exports
 
@@ -231,7 +250,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "@charset 'UTF-8';\r\n/* Slider *//*\r\n.slick-loading .slick-list\r\n{\r\n    background: #fff url('./ajax-loader.gif') center center no-repeat;\r\n}\r\n\r\n/* Icons *//*\r\n@font-face\r\n{\r\n    font-family: 'slick';\r\n    font-weight: normal;\r\n    font-style: normal;\r\n\r\n    src: url('./fonts/slick.eot');\r\n    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');\r\n}\r\n/* Arrows */\r\n.slick-prev,\r\n.slick-next\r\n{\r\n    font-size: 0;\r\n    line-height: 0;\r\n\r\n    position: absolute;\r\n    top: 50%;\r\n\r\n    display: block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    padding: 0;\r\n    -webkit-transform: translate(0, -50%);\r\n    transform: translate(0, -50%);\r\n\r\n    cursor: pointer;\r\n\r\n    color: transparent;\r\n    border: none;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-prev:hover,\r\n.slick-prev:focus,\r\n.slick-next:hover,\r\n.slick-next:focus\r\n{\r\n    color: transparent;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-prev:hover:before,\r\n.slick-prev:focus:before,\r\n.slick-next:hover:before,\r\n.slick-next:focus:before\r\n{\r\n    opacity: 1;\r\n}\r\n.slick-prev.slick-disabled:before,\r\n.slick-next.slick-disabled:before\r\n{\r\n    opacity: .25;\r\n}\r\n\r\n.slick-prev:before,\r\n.slick-next:before\r\n{\r\n    font-family: 'slick';\r\n    font-size: 20px;\r\n    line-height: 1;\r\n\r\n    opacity: .75;\r\n    color: white;\r\n\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\n.slick-prev\r\n{\r\n    left: -25px;\r\n}\r\n[dir='rtl'] .slick-prev\r\n{\r\n    right: -25px;\r\n    left: auto;\r\n}\r\n.slick-prev:before\r\n{\r\n    content: '\\2190';\r\n}\r\n[dir='rtl'] .slick-prev:before\r\n{\r\n    content: '\\2192';\r\n}\r\n\r\n.slick-next\r\n{\r\n    right: -25px;\r\n}\r\n[dir='rtl'] .slick-next\r\n{\r\n    right: auto;\r\n    left: -25px;\r\n}\r\n.slick-next:before\r\n{\r\n    content: '\\2192';\r\n}\r\n[dir='rtl'] .slick-next:before\r\n{\r\n    content: '\\2190';\r\n}\r\n\r\n/* Dots */\r\n.slick-dotted.slick-slider\r\n{\r\n    margin-bottom: 30px;\r\n}\r\n\r\n.slick-dots\r\n{\r\n    position: absolute;\r\n    bottom: -25px;\r\n\r\n    display: block;\r\n\r\n    width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n\r\n    list-style: none;\r\n\r\n    text-align: center;\r\n}\r\n.slick-dots li\r\n{\r\n    position: relative;\r\n\r\n    display: inline-block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    margin: 0 5px;\r\n    padding: 0;\r\n\r\n    cursor: pointer;\r\n}\r\n.slick-dots li button\r\n{\r\n    font-size: 0;\r\n    line-height: 0;\r\n\r\n    display: block;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n    padding: 5px;\r\n\r\n    cursor: pointer;\r\n\r\n    color: transparent;\r\n    border: 0;\r\n    outline: none;\r\n    background: transparent;\r\n}\r\n.slick-dots li button:hover,\r\n.slick-dots li button:focus\r\n{\r\n    outline: none;\r\n}\r\n.slick-dots li button:hover:before,\r\n.slick-dots li button:focus:before\r\n{\r\n    opacity: 1;\r\n}\r\n.slick-dots li button:before\r\n{\r\n    font-family: 'slick';\r\n    font-size: 6px;\r\n    line-height: 20px;\r\n\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n\r\n    width: 20px;\r\n    height: 20px;\r\n\r\n    content: '\\2022';\r\n    text-align: center;\r\n\r\n    opacity: .25;\r\n    color: black;\r\n\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n}\r\n.slick-dots li.slick-active button:before\r\n{\r\n    opacity: .75;\r\n    color: black;\r\n}\r\n", ""]);
+exports.push([module.i, "@charset 'UTF-8';\n/* Slider *//*\n.slick-loading .slick-list\n{\n    background: #fff url('./ajax-loader.gif') center center no-repeat;\n}\n\n/* Icons *//*\n@font-face\n{\n    font-family: 'slick';\n    font-weight: normal;\n    font-style: normal;\n\n    src: url('./fonts/slick.eot');\n    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');\n}\n/* Arrows */\n.slick-prev,\n.slick-next\n{\n    font-size: 0;\n    line-height: 0;\n\n    position: absolute;\n    top: 50%;\n\n    display: block;\n\n    width: 20px;\n    height: 20px;\n    padding: 0;\n    -webkit-transform: translate(0, -50%);\n    transform: translate(0, -50%);\n\n    cursor: pointer;\n\n    color: transparent;\n    border: none;\n    outline: none;\n    background: transparent;\n}\n.slick-prev:hover,\n.slick-prev:focus,\n.slick-next:hover,\n.slick-next:focus\n{\n    color: transparent;\n    outline: none;\n    background: transparent;\n}\n.slick-prev:hover:before,\n.slick-prev:focus:before,\n.slick-next:hover:before,\n.slick-next:focus:before\n{\n    opacity: 1;\n}\n.slick-prev.slick-disabled:before,\n.slick-next.slick-disabled:before\n{\n    opacity: .25;\n}\n\n.slick-prev:before,\n.slick-next:before\n{\n    font-family: 'slick';\n    font-size: 20px;\n    line-height: 1;\n\n    opacity: .75;\n    color: white;\n\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n\n.slick-prev\n{\n    left: -25px;\n}\n[dir='rtl'] .slick-prev\n{\n    right: -25px;\n    left: auto;\n}\n.slick-prev:before\n{\n    content: '\\2190';\n}\n[dir='rtl'] .slick-prev:before\n{\n    content: '\\2192';\n}\n\n.slick-next\n{\n    right: -25px;\n}\n[dir='rtl'] .slick-next\n{\n    right: auto;\n    left: -25px;\n}\n.slick-next:before\n{\n    content: '\\2192';\n}\n[dir='rtl'] .slick-next:before\n{\n    content: '\\2190';\n}\n\n/* Dots */\n.slick-dotted.slick-slider\n{\n    margin-bottom: 30px;\n}\n\n.slick-dots\n{\n    position: absolute;\n    bottom: -25px;\n\n    display: block;\n\n    width: 100%;\n    padding: 0;\n    margin: 0;\n\n    list-style: none;\n\n    text-align: center;\n}\n.slick-dots li\n{\n    position: relative;\n\n    display: inline-block;\n\n    width: 20px;\n    height: 20px;\n    margin: 0 5px;\n    padding: 0;\n\n    cursor: pointer;\n}\n.slick-dots li button\n{\n    font-size: 0;\n    line-height: 0;\n\n    display: block;\n\n    width: 20px;\n    height: 20px;\n    padding: 5px;\n\n    cursor: pointer;\n\n    color: transparent;\n    border: 0;\n    outline: none;\n    background: transparent;\n}\n.slick-dots li button:hover,\n.slick-dots li button:focus\n{\n    outline: none;\n}\n.slick-dots li button:hover:before,\n.slick-dots li button:focus:before\n{\n    opacity: 1;\n}\n.slick-dots li button:before\n{\n    font-family: 'slick';\n    font-size: 6px;\n    line-height: 20px;\n\n    position: absolute;\n    top: 0;\n    left: 0;\n\n    width: 20px;\n    height: 20px;\n\n    content: '\\2022';\n    text-align: center;\n\n    opacity: .25;\n    color: black;\n\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n.slick-dots li.slick-active button:before\n{\n    opacity: .75;\n    color: black;\n}\n", ""]);
 
 // exports
 
@@ -250,7 +269,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* Slider */\r\n.slick-slider\r\n{\r\n    position: relative;\r\n\r\n    display: block;\r\n    box-sizing: border-box;\r\n\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\r\n\r\n    -webkit-touch-callout: none;\r\n    -khtml-user-select: none;\r\n    touch-action: pan-y;\r\n    -webkit-tap-highlight-color: transparent;\r\n}\r\n\r\n.slick-list\r\n{\r\n    position: relative;\r\n\r\n    display: block;\r\n    overflow: hidden;\r\n\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n.slick-list:focus\r\n{\r\n    outline: none;\r\n}\r\n.slick-list.dragging\r\n{\r\n    cursor: pointer;\r\n    cursor: hand;\r\n}\r\n\r\n.slick-slider .slick-track,\r\n.slick-slider .slick-list\r\n{\r\n    -webkit-transform: translate3d(0, 0, 0);\r\n            transform: translate3d(0, 0, 0);\r\n}\r\n\r\n.slick-track\r\n{\r\n    position: relative;\r\n    top: 0;\r\n    left: 0;\r\n\r\n    display: block;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n}\r\n.slick-track:before,\r\n.slick-track:after\r\n{\r\n    display: table;\r\n\r\n    content: '';\r\n}\r\n.slick-track:after\r\n{\r\n    clear: both;\r\n}\r\n.slick-loading .slick-track\r\n{\r\n    visibility: hidden;\r\n}\r\n\r\n.slick-slide\r\n{\r\n    display: none;\r\n    float: left;\r\n\r\n    height: 100%;\r\n    min-height: 1px;\r\n}\r\n[dir='rtl'] .slick-slide\r\n{\r\n    float: right;\r\n}\r\n.slick-slide img\r\n{\r\n    display: block;\r\n}\r\n.slick-slide.slick-loading img\r\n{\r\n    display: none;\r\n}\r\n.slick-slide.dragging img\r\n{\r\n    pointer-events: none;\r\n}\r\n.slick-initialized .slick-slide\r\n{\r\n    display: block;\r\n}\r\n.slick-loading .slick-slide\r\n{\r\n    visibility: hidden;\r\n}\r\n.slick-vertical .slick-slide\r\n{\r\n    display: block;\r\n\r\n    height: auto;\r\n\r\n    border: 1px solid transparent;\r\n}\r\n.slick-arrow.slick-hidden {\r\n    display: none;\r\n}\r\n", ""]);
+exports.push([module.i, "/* Slider */\n.slick-slider\n{\n    position: relative;\n\n    display: block;\n    box-sizing: border-box;\n\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    -webkit-touch-callout: none;\n    -khtml-user-select: none;\n    touch-action: pan-y;\n    -webkit-tap-highlight-color: transparent;\n}\n\n.slick-list\n{\n    position: relative;\n\n    display: block;\n    overflow: hidden;\n\n    margin: 0;\n    padding: 0;\n}\n.slick-list:focus\n{\n    outline: none;\n}\n.slick-list.dragging\n{\n    cursor: pointer;\n    cursor: hand;\n}\n\n.slick-slider .slick-track,\n.slick-slider .slick-list\n{\n    -webkit-transform: translate3d(0, 0, 0);\n            transform: translate3d(0, 0, 0);\n}\n\n.slick-track\n{\n    position: relative;\n    top: 0;\n    left: 0;\n\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n}\n.slick-track:before,\n.slick-track:after\n{\n    display: table;\n\n    content: '';\n}\n.slick-track:after\n{\n    clear: both;\n}\n.slick-loading .slick-track\n{\n    visibility: hidden;\n}\n\n.slick-slide\n{\n    display: none;\n    float: left;\n\n    height: 100%;\n    min-height: 1px;\n}\n[dir='rtl'] .slick-slide\n{\n    float: right;\n}\n.slick-slide img\n{\n    display: block;\n}\n.slick-slide.slick-loading img\n{\n    display: none;\n}\n.slick-slide.dragging img\n{\n    pointer-events: none;\n}\n.slick-initialized .slick-slide\n{\n    display: block;\n}\n.slick-loading .slick-slide\n{\n    visibility: hidden;\n}\n.slick-vertical .slick-slide\n{\n    display: block;\n\n    height: auto;\n\n    border: 1px solid transparent;\n}\n.slick-arrow.slick-hidden {\n    display: none;\n}\n", ""]);
 
 // exports
 
@@ -28735,9 +28754,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Company; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Product */ "./resources/js/components/Product.js");
+/* harmony import */ var _css_company_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../css/company.css */ "./resources/js/css/company.css");
+/* harmony import */ var _css_company_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_company_css__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
@@ -28753,30 +28779,79 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
+
 var Company =
 /*#__PURE__*/
 function (_Component) {
   _inherits(Company, _Component);
 
   function Company() {
-    var _getPrototypeOf2;
-
     var _this;
 
     _classCallCheck(this, Company);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Company)).call.apply(_getPrototypeOf2, [this].concat(args)));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Company).call(this));
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "render", function () {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Company1");
+      var _this$state = _this.state,
+          isLoaded = _this$state.isLoaded,
+          product = _this$state.product;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "ind-company"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "company-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, " Experience : 3years "), "    BNK group pvt. Ltd.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "body-content"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "products"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "product"
+      }, product.map(function (item) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "ind-product",
+          key: item.id
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_1__["default"], {
+          data: [item.img_path, "/register", item.product_name, item.product_type, item.product_detail, "kathmandu"]
+        }));
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title-k"
+      }, "Main Products "), ": Apples, Shoes, Mangoes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title-k"
+      }, "Country/Region "), " : Nepal, Kathmandu"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title-k"
+      }, "Total Revenue "), " : Rs. 50 lakh"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title-k"
+      }, "Top Markets "), " : Kathmandu, Biratnagar, Delhi"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "title-k"
+      }, "Response Rate "), " : 80%")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Contact"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Leave Message")));
     });
 
+    _this.state = {
+      product: [],
+      isLoaded: false
+    };
     return _this;
   }
+
+  _createClass(Company, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      fetch('/api/product').then(function (response) {
+        return response.json();
+      }).then(function (json) {
+        //Fetched product is stored in the state
+        _this2.setState({
+          isLoaded: true,
+          product: json
+        });
+      });
+    }
+  }]);
 
   return Company;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
@@ -29340,9 +29415,15 @@ function (_Component) {
             className: "ind-product",
             key: item.id
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Product__WEBPACK_IMPORTED_MODULE_4__["default"], {
-            data: [item.img_path, "/register", item.product_name, item.product_type, item.product_detail, "kathmandu"]
+            data: [item.img_path, "/register", item.product_name, item.product_type, item.product_detail, item.location]
           }));
-        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Company__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+        }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+          style: {
+            width: "100%",
+            padding: "30px 0px",
+            textAlign: "center"
+          }
+        }, "Companies"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Company__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], null));
       }
     });
 
@@ -31199,10 +31280,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
-
-var maintainmargin = {
-  margin: "30px"
-};
+ //import "./Login.css";
 
 var RegisterPage =
 /*#__PURE__*/
@@ -31257,7 +31335,7 @@ function (_Component) {
         errors.emailError = "";
       }
 
-      if (_this.state.phoneNumber.length < 10 && !isNaN(_this.state.phoneNumber)) {
+      if (_this.state.phoneNumber.length < 9 && !isNaN(_this.state.phoneNumber)) {
         isError = true;
         errors.phoneNumberError = "invalid Phone number";
       } else {
@@ -31346,26 +31424,20 @@ function (_Component) {
       var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "wrapper fadeInDown"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "login-k",
-        style: maintainmargin
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "fadeIn first profile-userpic"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "glyphicon glyphicon-user",
-        id: "icon"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "login-k"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "box-title"
+      }, "Register Here"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "login-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-field fadeIn second"
+        class: "form-field"
       }, "Choose Type"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
         onChange: function onChange(e) {
           return _this2._submitHandleChange(e);
         },
-        className: "select-field fadeIn third"
+        className: "select-field"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "select"
       }, "select"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -31379,11 +31451,11 @@ function (_Component) {
       }, "Transport Agency")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, " ", this.state.userTypeError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box fadeIn second"
+        class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Enter your company name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box fadeIn third",
+        className: "input-box",
         name: "companyName",
         placeholder: "company name",
         value: this.state.companyName,
@@ -31393,11 +31465,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.companyNameError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box fadeIn second"
+        class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Enter email address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box fadeIn third",
+        className: "input-box",
         name: "email",
         placeholder: "email",
         type: "email",
@@ -31408,11 +31480,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.emailError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box fadeIn third"
+        class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Conact Number"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box fadeIn fourth",
+        className: "input-box",
         name: "phoneNumber",
         placeholder: "phone number",
         value: this.state.phoneNumber,
@@ -31422,11 +31494,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.phoneNumberError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box fadeIn third"
+        class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box fadeIn fourth",
+        className: "input-box",
         name: "password",
         placeholder: "password",
         type: "password",
@@ -31437,7 +31509,7 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.passwordError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box fadeIn fourth"
+        class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Re-enter Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -31452,11 +31524,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.confirmPasswordError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "submit-button fadeIn fourth",
+        className: "submit-button",
         onClick: function onClick(e) {
           return _this2.handleSubmit(e);
         }
-      }, "Sign Up")))));
+      }, "submit"))));
     }
   }]);
 
@@ -32022,6 +32094,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./resources/js/css/company.css":
+/*!**************************************!*\
+  !*** ./resources/js/css/company.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/postcss-loader/src??ref--6-2!./company.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/css/company.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./resources/js/css/navigation.css":
 /*!*****************************************!*\
   !*** ./resources/js/css/navigation.css ***!
@@ -32253,14 +32355,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Footer */ "./resources/js/components/Footer.js");
 /* harmony import */ var _components_Login_Login__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Login/Login */ "./resources/js/components/Login/Login.js");
 /* harmony import */ var _components_RegisterPage_RegisterPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/RegisterPage/RegisterPage */ "./resources/js/components/RegisterPage/RegisterPage.js");
-/* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./css/slick.css */ "./resources/js/css/slick.css");
-/* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_css_slick_css__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _css_slick_theme_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./css/slick-theme.css */ "./resources/js/css/slick-theme.css");
-/* harmony import */ var _css_slick_theme_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_css_slick_theme_css__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./css/nouislider.min.css */ "./resources/js/css/nouislider.min.css");
-/* harmony import */ var _css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./css/style.css */ "./resources/js/css/style.css");
-/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _components_Company__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/Company */ "./resources/js/components/Company.js");
+/* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./css/slick.css */ "./resources/js/css/slick.css");
+/* harmony import */ var _css_slick_css__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_css_slick_css__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _css_slick_theme_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./css/slick-theme.css */ "./resources/js/css/slick-theme.css");
+/* harmony import */ var _css_slick_theme_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_css_slick_theme_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./css/nouislider.min.css */ "./resources/js/css/nouislider.min.css");
+/* harmony import */ var _css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_css_nouislider_min_css__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./css/style.css */ "./resources/js/css/style.css");
+/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_14__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32278,6 +32381,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -32332,6 +32436,9 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         path: "/page",
         component: _components_MainPage__WEBPACK_IMPORTED_MODULE_6__["default"]
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        path: "/company",
+        component: _components_Company__WEBPACK_IMPORTED_MODULE_10__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
         component: _components_Error__WEBPACK_IMPORTED_MODULE_3__["default"]
       }))));
@@ -32460,8 +32567,13 @@ function unregister() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\xamp\htdocs\sabaixa\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! F:\xamp\htdocs\sabaixa\resources\sass\app.scss */"./resources/sass/app.scss");
+<<<<<<< HEAD
+__webpack_require__(/*! C:\xampp\htdocs\locusbnk\sabaixa\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\locusbnk\sabaixa\resources\sass\app.scss */"./resources/sass/app.scss");
+=======
+__webpack_require__(/*! C:\xampp\htdocs\sabaixa\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\sabaixa\resources\sass\app.scss */"./resources/sass/app.scss");
+>>>>>>> 8e13a14c17d10ff86ddd0286657ef9e8c9be9658
 
 
 /***/ })

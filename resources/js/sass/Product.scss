@@ -1,24 +1,24 @@
 .product-view{
     width:30%;
-    border:1px solid black;
-
+    min-height: 250px;
+    background:white;
 
     .product-info{
         display:flex;
         flex-wrap:wrap;
         align-items:center;
         justify-content:center;
-        background: black;
-        border:1px solid orangered;
+        background: white;
 
         .product-data{
+            text-align:center;
             list-style-type: none;
             font-size: 14px;
-            color: orangered;
+            color: black;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
             .product-name{
-                font-size:14px;
+                font-size:18px;
                 text-align: center;
                 font-weight: 600;
             }

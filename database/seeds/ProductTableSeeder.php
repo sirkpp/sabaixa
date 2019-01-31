@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Product;
+use App\User;
 class ProductTableSeeder extends Seeder
 {
     /**
@@ -11,12 +12,9 @@ class ProductTableSeeder extends Seeder
      */
     public function run()
     {
-        $kpp=new Product();
-        $kpp['id']=1;
-        $kpp['product_name']="Krishnaaa";
-        $kpp['product_type']="Panthiii";
-        $kpp['product_detail']="kpp@kpp.com";
-        $kpp['img_path']="kpp@kpp.com";
-        $kpp->Save();
+        factory(App\Product::class, 50)->create();
+        $product=Product::find(1);
+        $user=User::find(1);
+        $user->product()->attach($product);
     }
-}
+}   
