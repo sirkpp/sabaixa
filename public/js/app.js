@@ -31280,10 +31280,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
-
-var maintainmargin = {
-  margin: "30px"
-};
+ //import "./Login.css";
 
 var RegisterPage =
 /*#__PURE__*/
@@ -31338,7 +31335,7 @@ function (_Component) {
         errors.emailError = "";
       }
 
-      if (_this.state.phoneNumber.length < 10 && !isNaN(_this.state.phoneNumber)) {
+      if (_this.state.phoneNumber.length < 9 && !isNaN(_this.state.phoneNumber)) {
         isError = true;
         errors.phoneNumberError = "invalid Phone number";
       } else {
@@ -31427,26 +31424,20 @@ function (_Component) {
       var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "wrapper fadeInDown"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "login-k",
-        style: maintainmargin
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "fadeIn first profile-userpic"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "glyphicon glyphicon-user",
-        id: "icon"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "login-k"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "box-title"
+      }, "Register Here"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "login-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-field fadeIn second"
+        class: "form-field"
       }, "Choose Type"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
         onChange: function onChange(e) {
           return _this2._submitHandleChange(e);
         },
-        className: "select-field fadeIn third"
+        className: "select-field"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
         value: "select"
       }, "select"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
@@ -31460,11 +31451,11 @@ function (_Component) {
       }, "Transport Agency")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, " ", this.state.userTypeError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box fadeIn second"
+        class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Enter your company name"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box fadeIn third",
+        className: "input-box",
         name: "companyName",
         placeholder: "company name",
         value: this.state.companyName,
@@ -31474,11 +31465,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.companyNameError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box fadeIn second"
+        class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Enter email address"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box fadeIn third",
+        className: "input-box",
         name: "email",
         placeholder: "email",
         type: "email",
@@ -31489,11 +31480,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.emailError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box fadeIn third"
+        class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Conact Number"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box fadeIn fourth",
+        className: "input-box",
         name: "phoneNumber",
         placeholder: "phone number",
         value: this.state.phoneNumber,
@@ -31503,11 +31494,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.phoneNumberError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box fadeIn third"
+        class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "input-box fadeIn fourth",
+        className: "input-box",
         name: "password",
         placeholder: "password",
         type: "password",
@@ -31518,7 +31509,7 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.passwordError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        class: "form-box fadeIn fourth"
+        class: "form-box"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "form-field"
       }, "Re-enter Password"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -31533,11 +31524,11 @@ function (_Component) {
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "error-message"
       }, this.state.confirmPasswordError)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "submit-button fadeIn fourth",
+        className: "submit-button",
         onClick: function onClick(e) {
           return _this2.handleSubmit(e);
         }
-      }, "Sign Up")))));
+      }, "submit"))));
     }
   }]);
 
@@ -32576,8 +32567,13 @@ function unregister() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! C:\xampp\htdocs\locusbnk\sabaixa\resources\js\app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! C:\xampp\htdocs\locusbnk\sabaixa\resources\sass\app.scss */"./resources/sass/app.scss");
+=======
+__webpack_require__(/*! C:\xampp\htdocs\sabaixa\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\sabaixa\resources\sass\app.scss */"./resources/sass/app.scss");
+>>>>>>> 8e13a14c17d10ff86ddd0286657ef9e8c9be9658
 
 
 /***/ })

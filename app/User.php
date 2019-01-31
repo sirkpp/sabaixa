@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'gender', 'profile_pic', 'password', 'user_type' , 'contact_no',
+        'name', 'email', 'gender', 'profile_pic', 'user_type' ,'main_product', 'experience', 'contact_no',  'total_revenue','top_market', 'password',
     ];
 
     /**
@@ -36,6 +36,6 @@ class User extends Authenticatable
         return $this->belongsToMany('App\Product');
     }
     public function ureview(){
-        return $this->belongsToMany('App\Review');
+        return $this->hasMany('App\Review');
     }
 }

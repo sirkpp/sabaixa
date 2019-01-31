@@ -53,20 +53,39 @@ class ProductController extends Controller
         }
         return $data;
     }
+    public function productList($count)
+    {
+        $products = Product::all();
+        //$data = array();
+        $len = $product.length;
+        if($len<$count)
+        {
+            return $product;
+        }else{
+            return array_chunk($products,$count);
+        }
+        
+        return $data;
+    }
     public function createProduct(Request $request)
     {
+        if(Auth::check()){
         if($this->validator(array("product_detail"=>$request['product_detail'], "product_name"=>$request['product_name'], "min_quantity"=>$request['min_quantity'], "price_per_min_quantity"=>$request['price_per_min_quantity'], "location"=>$request['location'], "seller"=>$request['seller']))){
-            return Product::create([
-                'product_name'=>$request['product_name'],
-                'product_type'=>$request['product_type'],
-                "min_quantity"=>$request['min_quantity'],
-                "price_per_min_quantity"=>$request['price_per_min_quantity'],
-                "location"=>$request['location'],
-                "seller"=>$request['seller'],
-                "producdelivery_by_sellert_type"=>$request['delivery_by_seller'],
-                'product_detail'=>$request['product_detail'],
-                'img_path'=>$request['img_path'],
-            ]);
+                $product= Product::create([
+                    'product_name'=>$request['product_name'],
+                    'product_type'=>$request['product_type'],
+                    "min_quantity"=>$request['min_quantity'],
+                    "price_per_min_quantity"=>$request['price_per_min_quantity'],
+                    "location"=>$request['location'],
+                    "seller"=>$request['seller'],
+                    "producdelivery_by_sellert_type"=>$request['delivery_by_seller'],
+                    'product_detail'=>$request['product_detail'],
+                    'img_path'=>$request['img_path'],
+                ]);
+                $currentUser=Auth::user();
+                $currentUser->product()->attach($product);
+                return $product;
+            }
         }
     }
     protected function validator(array $data)
@@ -156,4 +175,5 @@ class ProductController extends Controller
     {
         return Auth::user()->uproduct;                                 
     }
+
 }

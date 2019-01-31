@@ -31,8 +31,8 @@ class ReviewController extends Controller
         return $review;
     }
 
-    public function showReview(){
-        $reviews = Review::all();
+    public function showReview($id){
+        $reviews = find($id)->preview;
         $data - array();
         foreach($reviews as $review)
         {
@@ -68,6 +68,7 @@ class ReviewController extends Controller
         $review->save();
     }
 
+    
     public function deleteReview(Request $request)
     {
         $review = Review::find($request['id']);
@@ -77,5 +78,8 @@ class ReviewController extends Controller
     {
         return Auth::user()->ureview;                                 
     }
-
+    public function produtReview()
+    {
+        return Auth::user()->uproduct;                                 
+    }
 }

@@ -12,6 +12,7 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
+<<<<<<< HEAD
         $kpp=new User();
         $kpp['id']=1;
         $kpp['name']="Krishnaaa";
@@ -22,5 +23,8 @@ class UserTableSeeder extends Seeder
         $kpp['contact_no']=981;
         $kpp['password']=Hash::make('abcdefghh');
         $kpp->Save();
+=======
+        factory(App\User::class, 50)->create();
+>>>>>>> 8e13a14c17d10ff86ddd0286657ef9e8c9be9658
     }
 }
