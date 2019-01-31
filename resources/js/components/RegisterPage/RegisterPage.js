@@ -133,13 +133,13 @@ export default class RegisterPage extends Component {
                 ...errors
               });
             }
-           });
+           };
           }
       }
       xhr.send();
 
     }
-  }
+  
 
 
 
@@ -234,10 +234,5 @@ export default class RegisterPage extends Component {
       </div>
     );
   }
-<<<<<<< HEAD
-  
-}
-=======
 }
 
->>>>>>> 3bdd4e05fae427f4f397c3b3920c17f71818d967
