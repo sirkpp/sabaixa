@@ -1,0 +1,97 @@
+.ind-company{
+    margin-left:20%;
+    padding:20px 0px;
+    margin-top:20px;
+    background:white;
+    .company-header{
+        width:100%;
+        padding:10px;
+        color:black;
+    }
+
+    .company-header::after{
+        content:'';
+        display: block;
+        background:black;
+        height: 1px;
+    }
+
+    .body-content{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .products{
+        width:50%;
+        min-width:350px;
+        display:flex;
+
+        .product{
+            width:100%;
+            display:flex;
+
+            .ind-product{
+                width:30%;
+            }
+        }
+    }
+
+    .details{
+        width:50%;
+        min-width: 300px;
+        display:block;
+        color:black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 16px;
+
+        .title-k{
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    button{
+        color:white;
+        background:orangered;
+        border:none;
+        margin:0px 50px;
+        padding:5px 13px;
+        font-size: 16px;
+    }
+
+}
+
+.ind-company:hover{
+    box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.6);
+}
+
+
+@media screen and (max-width:900px){
+    .ind-company{
+        margin:0px;
+    }
+}
+
+@media screen and (max-width:750px){
+    .ind-company{
+        .products , .details{
+            width:80%;
+            margin-left:10%;
+            min-width: 320px;
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .ind-company{
+        .products, .details{
+            margin:0px;
+            width:100%
+            
+        }
+
+        button{
+            margin:0px 20px;
+        }
+    }
+}

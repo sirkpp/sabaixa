@@ -122,15 +122,15 @@ export default class RegisterPage extends Component {
 
 
 
-      fetch('/register', {
+      fetch('api/register', {
         method: 'post',
         headers: {'Content-Type':'application/json'},
         body: {
           user_type: event.target.userType,
           
-          company_name: event.target.companyName,
+          name: event.target.companyName,
           
-          phone_number: event.target.phoneNumber,
+          contact_no: event.target.phoneNumber,
           
           email: event.target.email,
           

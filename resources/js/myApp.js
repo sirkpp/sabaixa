@@ -10,10 +10,14 @@ import Footer from "./components/Footer";
 import Login from "./components/Login/Login";
 import RegisterPage from "./components/RegisterPage/RegisterPage";
 
+import Company from "./components/Company";
+
 import "./css/slick.css";
 import "./css/slick-theme.css";
 import "./css/nouislider.min.css";
 import "./css/style.css";
+
+
 
 
 const NewRoute=()=>{
@@ -37,6 +41,7 @@ class App extends Component {
         <Route path="/login" component={Login} exact/>
         <Route path="/new" component={NewRoute} />
         <Route path="/page" component={MainPage} />
+        <Route path="/company" component={Company} />
         <Route component={Error}/>
       </Switch>
 
