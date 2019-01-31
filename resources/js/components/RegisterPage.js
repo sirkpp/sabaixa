@@ -122,7 +122,7 @@ export default class RegisterPage extends Component {
 
 
 
-      fetch('/register', {
+      fetch('api/register', {
         method: 'post',
         headers: {'Content-Type':'application/json'},
         body: {

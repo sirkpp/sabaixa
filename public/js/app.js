@@ -31335,7 +31335,7 @@ function (_Component) {
       var err = _this.validateForm();
 
       if (!err) {
-        fetch('/register', {
+        fetch('api/register', {
           method: 'post',
           headers: {
             'Content-Type': 'application/json'
