@@ -113,21 +113,18 @@ export default class RegisterPage extends Component {
       xhr.open("POST","api/register?"+"_token="+document.querySelector("meta[name='csrf-token']").content+"&email="+this.state.email+"&name="+this.state.companyName+"&user_type="+this.state.userType+"&contact_no="+this.state.phoneNumber+"&password="+this.state.password);
       xhr.onreadystatechange=function(){
           if(xhr.readyState===4){
-            console.log(this.state);
-            this.setState({
-              userType: "",
-              userTypeError: "",
-              companyName: "",
-              companyNameError: "",
-              phoneNumber: "",
-              phoneNumberError: "",
-              email: "",
-              emailError: "",
-              password: "",
-              passwordError: "",
-              confirmPassword: "",
-              confirmPasswordError: ""
-            });
+            if(xhr.status === 201){
+
+            }
+            else{
+              let errors ={};
+              errors.servererror = "201 : Server Error <br/> Failed to connect to the server. Please, try again!"
+              this.setState({
+                ...this.state,
+                ...errors
+              });
+            }
+           });
           }
       }
       xhr.send();
@@ -139,6 +136,7 @@ export default class RegisterPage extends Component {
     return (
       <div className="wrapper fadeInDown">
         <div className="login-k" style={maintainmargin}>
+        <div className="server-error">{this.state.servererror}</div>
           <div className="fadeIn first profile-userpic">
             <i className="glyphicon glyphicon-user" id="icon" />
           </div>
@@ -241,3 +239,4 @@ export default class RegisterPage extends Component {
     );
   }
 }
+
