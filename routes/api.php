@@ -16,23 +16,14 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('/', function () {
-    return view('welcome');
+Auth::routes();
+Route::group(['middleware' => ['web']], function () {
+    Route::post('/login','Auth\LoginController@login');
 });
 
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-
-//Route::get('/user', 'ProfileController@')
 Route::get('/user/{id}', 'ProfileController@index');
 Route::post('/user/editName', 'ProfileController@editName')->name('user.editName');
 Route::post('/user/editProfilePic', 'ProfileController@editProfilePic')->name('user.editProfilePic');

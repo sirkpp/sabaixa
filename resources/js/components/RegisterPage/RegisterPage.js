@@ -118,43 +118,28 @@ export default class RegisterPage extends Component {
     console.log(event.target)
     const err = this.validateForm();
     if (!err) {
-
-
-
-
-      fetch('/http://127.0.0.1:8000/register', {
-        credentials: 'include' ,
-        method: 'post',
-        headers: {'Content-Type':'application/json'},
-        body: {
-          user_type: event.target.userType,
-          
-          name: event.target.companyName,
-          
-          contact_no: event.target.phoneNumber,
-          
-          email: event.target.email,
-          
-          password: event.target.password,
-        }
-       });
-
-
-
-      this.setState({
-        userType: "",
-        userTypeError: "",
-        companyName: "",
-        companyNameError: "",
-        phoneNumber: "",
-        phoneNumberError: "",
-        email: "",
-        emailError: "",
-        password: "",
-        passwordError: "",
-        confirmPassword:"",
-        confirmPasswordError:""
-      });
+      var xhr=new XMLHttpRequest();
+      xhr.open("POST","api/register?"+"_token="+document.querySelector("meta[name='csrf-token']").content+"&email="+this.state.email+"&name="+this.state.companyName+"&user_type="+this.state.userType+"&contact_no="+this.state.phoneNumber+"&password="+this.state.password);
+      xhr.onreadystatechange=function(){
+          if(xhr.readyState===4){
+            console.log(this.state);
+            this.setState({
+              userType: "",
+              userTypeError: "",
+              companyName: "",
+              companyNameError: "",
+              phoneNumber: "",
+              phoneNumberError: "",
+              email: "",
+              emailError: "",
+              password: "",
+              passwordError: "",
+              confirmPassword: "",
+              confirmPasswordError: ""
+            });
+          }
+      }
+      xhr.send();
 
     }
   }
